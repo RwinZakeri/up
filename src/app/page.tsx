@@ -5,6 +5,7 @@ const HomePage = async () => {
   return (
     <Box className={"pt-20"}>
       <BannerArea />
+      test
     </Box>
   );
 };
