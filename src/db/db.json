@@ -1,0 +1,93 @@
+{
+  "headerItems": [
+    {
+      "id": 1,
+      "title": "خانه",
+      "linkAddress": "/"
+    },
+    {
+      "id": 2,
+      "title": "درباره ما",
+      "linkAddress": "/about",
+      "subMenuHeader": [
+        {
+          "id": 1,
+          "title": "تیم ما",
+          "linkAddress": "/about/team"
+        },
+        {
+          "id": 2,
+          "title": "مأموریت و اهداف",
+          "linkAddress": "/about/mission"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "خدمات",
+      "linkAddress": "/services",
+      "subMenuHeader": [
+        {
+          "id": 1,
+          "title": "مشاوره",
+          "linkAddress": "/services/consulting"
+        },
+        {
+          "id": 2,
+          "title": "پشتیبانی",
+          "linkAddress": "/services/support"
+        },
+        {
+          "id": 3,
+          "title": "آموزش",
+          "linkAddress": "/services/training"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "تماس با ما",
+      "linkAddress": "/contact",
+      "subMenuHeader": []
+    },
+    {
+      "id": 5,
+      "title": "وبلاگ",
+      "linkAddress": "/blog",
+      "subMenuHeader": [
+        {
+          "id": 1,
+          "title": "مقالات اخیر",
+          "linkAddress": "/blog/recent"
+        },
+        {
+          "id": 2,
+          "title": "دسته‌بندی‌ها",
+          "linkAddress": "/blog/categories"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "محصولات",
+      "linkAddress": "/products",
+      "subMenuHeader": [
+        {
+          "id": 1,
+          "title": "محصولات جدید",
+          "linkAddress": "/products/new"
+        },
+        {
+          "id": 2,
+          "title": "پرفروش‌ترین‌ها",
+          "linkAddress": "/products/bestsellers"
+        },
+        {
+          "id": 3,
+          "title": "تخفیف‌ها",
+          "linkAddress": "/products/discounts"
+        }
+      ]
+    }
+  ]
+}
