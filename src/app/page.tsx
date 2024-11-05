@@ -3,7 +3,7 @@ import { Box } from "@mui/material";
 
 const HomePage = async () => {
   return (
-    <Box className={"pt-20"}>
+    <Box>
       <BannerArea />
       test
     </Box>

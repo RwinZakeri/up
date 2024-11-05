@@ -13,12 +13,12 @@ import {
 
 const BannerFrom = () => {
   return (
-    <form className="flex flex-col gap-4 pt-4">
+    <form className="flex flex-col gap-4 px-4 py-8 rounded-xl my-4 bg-mainWhite">
       <TextField
         id="outlined-basic"
         label="کلمات کلیدی / عنوان شغلی"
         variant="outlined"
-        className="w-full"
+        className="w-full bg-lightGreen/15"
         size="small"
         slotProps={{
           input: {
@@ -34,7 +34,7 @@ const BannerFrom = () => {
         id="outlined-basic"
         label="شهر یا کد پستی"
         variant="outlined"
-        className="w-full"
+        className="w-full bg-lightGreen/15"
         size="small"
         slotProps={{
           input: {
@@ -52,6 +52,7 @@ const BannerFrom = () => {
           یک دسته را انتخاب کنید"
         </InputLabel>
         <Select
+          className="bg-lightGreen/15"
           size="small"
           labelId="demo-simple-select-label"
           id="demo-simple-select"

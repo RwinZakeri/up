@@ -4,7 +4,7 @@ import { Box, Typography } from "@mui/material";
 
 const BannerArea = () => {
   return (
-    <Box className="py-12 px-2">
+    <Box className="py-12 px-2 bg-lightGreen/10 pt-20">
       <Typography
         variant="h1"
         sx={{
@@ -15,7 +15,7 @@ const BannerArea = () => {
         }}
       >
         بیش از
-        <strong className="text-green-700 mx-2">+10,000</strong>
+        <strong className="text-lightGreen mx-2">10,000+</strong>
         شغل در نزدیکی شما موجود است.
       </Typography>
       <Typography variant="body1" sx={{ fontSize: 15, marginBottom: 1 }}>
@@ -24,6 +24,7 @@ const BannerArea = () => {
       </Typography>
       <BannerFrom />
       <PopularSearch />
+      {/* <UsersProfile /> */}
     </Box>
   );
 };
