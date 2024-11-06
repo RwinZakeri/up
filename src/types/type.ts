@@ -8,3 +8,10 @@ export interface headerItemType {
     linkAddress: string;
   }[];
 }
+
+export interface popularSearch {
+  id: number;
+  title: string;
+  linkAddress: string;
+}
+[];

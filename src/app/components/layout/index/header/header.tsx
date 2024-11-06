@@ -30,48 +30,40 @@ const Header = () => {
 
   return (
     <header
-      className={`w-full fixed top-0 left-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white" : "bg-transparent"
+      className={`w-full fixed top-0 px-4 left-0 z-50 transition-all duration-300 ${
+        isScrolled ? "bg-mainWhite" : "bg-transparent"
       }`}
     >
       <Box
+        className="standardContainer"
         sx={{
           width: "100%",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          paddingX: { sm: "10px", md: "20px" },
-          padding: { xs: "10px", md: "10px" },
-          boxShadow: isScrolled ? 2 : "none", // Optional: add a shadow when scrolled
+          padding: { xs: "10px", md: "0px" },
+          boxShadow: "none", // Removed box shadow completely
         }}
       >
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            gap: "40px",
-          }}
-        >
+        <Box sx={{ display: "flex", alignItems: "center", gap: "40px" }}>
           <Image src={Logo} alt="zoben" width={143} height={53} />
           <NavItems />
         </Box>
 
         <Box sx={{ display: "flex", alignItems: "center" }}>
-          <Box sx={{ display: "flex", gap: 1 }}>
+          <Box sx={{ display: "flex", gap: 1 }} className="hidden lg:flex">
             <Button
               variant="outlined"
-              sx={{
-                display: { xs: "none", md: "block" },
-              }}
+              size="large"
+              sx={{ display: { xs: "none", md: "block" } }}
             >
               ورود / ثبت نام
               <PersonIcon sx={{ margin: 0.5 }} />
             </Button>
             <Button
               variant="contained"
-              sx={{
-                display: { xs: "none", md: "block" },
-              }}
+              size="large"
+              sx={{ display: { xs: "none", md: "block" } }}
             >
               ارسال آگهی
               <BusinessCenterIcon sx={{ margin: 0.5 }} />

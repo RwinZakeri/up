@@ -89,5 +89,22 @@
         }
       ]
     }
+  ],
+  "popularSearch": [
+    {
+      "id": 1,
+      "title": "وب",
+      "linkAddress": "web"
+    },
+    {
+      "id": 2,
+      "title": "داستان",
+      "linkAddress": "web"
+    },
+    {
+      "id": 2,
+      "title": "داستان",
+      "linkAddress": "web"
+    }
   ]
 }

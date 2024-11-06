@@ -8,19 +8,12 @@ const NavItems = () => {
   const { headerItems } = db;
 
   return (
-    <Box
-      component="nav"
-      className="w-full"
-      sx={{
-        display: { xs: "none", sm: "none", md: "block" }, // hidden on mobile and tablet, block on desktop
-      }}
-    >
+    <Box component="nav" className="w-full hidden lg:block">
       <List
         className="w-fit"
         sx={{
           display: "flex",
           alignItems: "center",
-          gap: { sm: "15px", md: "25px" },
           padding: "0px",
         }}
       >

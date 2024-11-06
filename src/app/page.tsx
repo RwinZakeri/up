@@ -1,13 +1,7 @@
-import BannerArea from "@/pages/home/index/bannerArea";
-import { Box } from "@mui/material";
+import HomePage from "./(pages)/home/index/home";
 
-const HomePage = async () => {
-  return (
-    <Box>
-      <BannerArea />
-      test
-    </Box>
-  );
+const Home = async () => {
+  return <HomePage />;
 };
 
-export default HomePage;
+export default Home;

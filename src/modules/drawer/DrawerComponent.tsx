@@ -8,7 +8,7 @@ function ResponsiveDrawer() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   return (
-    <Box sx={{ display: { md: "none" } }}>
+    <Box className="block lg:hidden">
       <Button onClick={() => setIsDrawerOpen(true)} className="h-full text-2xl">
         <MenuIcon sx={{ fontSize: "40px" }} /> {/* Increased size */}
       </Button>

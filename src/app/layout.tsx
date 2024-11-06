@@ -1,4 +1,4 @@
-import Layout from "@/components/layout/index/layout";
+import Layout from "@/app/components/layout/index/layout";
 import { StyledEngineProvider } from "@mui/material";
 import "./globals.css";
 

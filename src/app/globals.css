@@ -6,6 +6,9 @@
   .container {
     @apply max-w-[1920px] mx-auto;
   }
+  .standardContainer {
+    @apply max-w-[1700px] mx-auto;
+  }
 }
 
 /* Import Vazirmatn font styles */
