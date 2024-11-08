@@ -7,7 +7,12 @@ import Link from "next/link";
 const DreamJobCardContainer = () => {
   return (
     <Box className="mt-12 max-w-[1440px] mx-auto px-4">
-      <DreamJobCard />
+      <Box sx={{ display: "flex", gap: 4, flexDirection: "column" }}>
+        <DreamJobCard />
+        <DreamJobCard />
+        <DreamJobCard />
+        <DreamJobCard />
+      </Box>
       <Link
         className="block w-fit mx-auto relative group text-center text-lightGreen after:content-[''] after:block after:absolute after:w-full after:bg-highGreen after:rounded-full after:left-0 after:h-0.5 my-8"
         href={"/"}

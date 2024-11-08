@@ -117,3 +117,48 @@
     animation: animateLine 3s infinite;
   }
 }
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  padding: 25px;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Custom styles for Swiper pagination bullets */
+.swiper-pagination-bullet {
+  background-color: #bdbdbd; /* Customize the bullet color */
+  opacity: 1; /* Full opacity for better visibility */
+  width: 8px; /* Customize bullet size */
+  height: 8px;
+  transition-duration: 300ms;
+  transition-property: all;
+  transition-timing-function: ease;
+  margin-top: 1rem;
+  /* position: ab; */
+}
+
+.swiper-pagination-bullet-active {
+  width: 1.5rem;
+  height: 0.5rem;
+  border-radius: 10px;
+  background-color: #59cb99; /* Active bullet color */
+  transition-duration: 300ms;
+  transition-property: all;
+  transition-timing-function: ease;
+}

@@ -15,3 +15,10 @@ export interface popularSearch {
   linkAddress: string;
 }
 [];
+
+export interface CommentSliderItem {
+  id: number;
+  title: string;
+  description: string;
+  profileAddress: string;
+}
