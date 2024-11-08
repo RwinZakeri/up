@@ -5,6 +5,7 @@ import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 // images
 import WomanShout from "@/assets/images/home-one/home-one-img.png";
+import UsersProfile from "@/modules/usersProfile/usersProfile";
 // fetcher
 export async function fetcherData() {
   const res = await fetch("http://localhost:3000/api", { cache: "no-store" });
@@ -37,7 +38,7 @@ const BannerArea = async () => {
       </Typography>
       <BannerFrom />
       <PopularSearch popularSearch={popularSearch} />
-      {/* <UsersProfile /> */}
+      <UsersProfile />
       <Box
         className="lg:pt-36"
         sx={{

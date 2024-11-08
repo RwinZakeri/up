@@ -85,3 +85,35 @@
 .MuiTypography-root {
   font-family: "Vazirmatn", Arial, sans-serif !important;
 }
+
+@keyframes animateLine {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(1300%);
+  }
+}
+
+/* global.css */
+.animateLine {
+  position: relative;
+  width: 7rem; /* Width of the line */
+  height: 0.25rem; /* Height of the line */
+  margin: 1rem auto;
+  border-radius: 9999px; /* Full border radius */
+  background-color: rgb(0, 202, 153, 0.2); /* Use Tailwind-defined color */
+
+  &::after {
+    content: "";
+    width: 0.5rem; /* Size of the moving dot */
+    height: 0.5rem;
+    border-radius: 50%;
+    top: -2px;
+    background-color: #00ca99; /* Apply Tailwind-defined color */
+    position: absolute;
+    left: 0; /* Start at the beginning of the box */
+    transform: translateY(-50%); /* Center the dot vertically */
+    animation: animateLine 3s infinite;
+  }
+}
