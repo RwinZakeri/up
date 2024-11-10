@@ -10,8 +10,8 @@ const CommentCard = ({ comment }: CommentCardProps) => {
   const { title, description, profileAddress } = comment;
 
   return (
-    <Box className="w-full flex items-center justify-center flex-col gap-2 bg-transparent bg-[#f5fbf6]">
-      <Typography className="font-medium">{title}</Typography>
+    <Box className="w-full flex items-center justify-center flex-col gap-2 bg-transparent py-4 bg-[#f5fbf6]">
+      <Typography className="font-medium text-lg">{title}</Typography>
       <Image
         src={profileAddress} // Absolute path with leading "/"
         width={250}
@@ -19,7 +19,7 @@ const CommentCard = ({ comment }: CommentCardProps) => {
         className="max-w-14 max-h-14 rounded-full"
         alt="person"
       />
-      <Typography className="text-gray-500 text-center w-full lg:w-3/5 py-4">
+      <Typography className="text-gray-500 text-center w-full lg:w-4/5 py-4 text-lg">
         {description}
       </Typography>
     </Box>

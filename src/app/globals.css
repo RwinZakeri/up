@@ -149,7 +149,7 @@
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: ease;
-  margin-top: 1rem;
+  margin-top: 3rem;
   /* position: ab; */
 }
 
@@ -161,4 +161,19 @@
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: ease;
+}
+
+/* Remove padding from the Swiper component */
+.mySwiper {
+  padding: 0 !important; /* Ensure no padding is applied */
+}
+
+/* Remove padding from the individual swiper slides */
+.mySwiper .swiper-slide {
+  padding: 0 !important;
+}
+
+/* Ensure no space is added inside the swiper container */
+.mySwiper .swiper-wrapper {
+  margin: 0 !important;
 }

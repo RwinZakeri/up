@@ -22,3 +22,13 @@ export interface CommentSliderItem {
   description: string;
   profileAddress: string;
 }
+
+export interface Freelancer {
+  id: number;
+  title: string;
+  imgAddress: string;
+  rate: number;
+  jobPosition: string;
+  rateMoney: string;
+  description : string
+}

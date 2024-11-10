@@ -127,5 +127,36 @@
       "description": "ما نظرات کاربران خود را جمع‌آوری می‌کنیم تا بتوانید نظری صادقانه در مورد تجربه واقعی وب‌سایت ما داشته باشید. ما نظرات کاربران خود را جمع‌آوری می‌کنیم، بنابراین می‌توانید نظر صادقانه‌ای در مورد تجربه اینجا لورم ایپسوم دریافت کنید.",
       "profileAddress": "/images/testimonials/testimonials-img3.jpg"
     }
+  ],
+  "freeLancers": [
+    {
+      "id": 1,
+      "title": "ژاکلین فازندا",
+      "description": "توسعه دهنده شبکه",
+      "imgAddress": "/images/freelancers/freelancers-img1.jpg",
+      "rate": 1,
+      "jobPosition": "90",
+      "rateMoney": "30"
+    },
+    {
+      "id": 2,
+      "title": "ژاکلین فازندا",
+      "description": "توسعه دهنده شبکه",
+
+      "imgAddress": "/images/freelancers/freelancers-img2.jpg",
+      "rate": 5,
+      "jobPosition": "90",
+      "rateMoney": "30"
+    },
+    {
+      "id": 3,
+      "title": "ژاکلین فازندا",
+      "description": "توسعه دهنده شبکه",
+
+      "imgAddress": "/images/freelancers/freelancers-img3.jpg",
+      "rate": 5,
+      "jobPosition": "90",
+      "rateMoney": "30"
+    }
   ]
 }

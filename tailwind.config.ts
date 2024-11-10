@@ -23,6 +23,7 @@ const config: Config = {
         lightOrange: "#f26e8a",
         lightPink: "#fcedf6",
         pink: "#f05ba1",
+        gold : "#faa02f"
       },
     },
   },
