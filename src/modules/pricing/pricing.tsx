@@ -1,3 +1,4 @@
+// "use client";
 import myImage from "@/assets/images/user-img/user-img1.jpg";
 import CheckIcon from "@mui/icons-material/Check";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
@@ -19,155 +20,107 @@ import Image from "next/image";
 const PricingTable = () => {
   return (
     <Box className="pt-24 pb-16">
-      <Grid container spacing={4}>
-        {/* Pricing Table */}
-        <Grid item xs={12} md={6}>
-          <Box component="form">
-            <TableContainer>
-              <Table>
-                <TableHead>
-                  <TableRow>
-                    <TableCell className="!border-b-0"></TableCell>
-                    <TableCell className="text-xl font-medium">
-                      250 تومان <span className="text-sm">/ ماه</span>
-                    </TableCell>
-                    <TableCell className="text-xl font-medium">
-                      500 تومان <span className="text-sm">/ ماه</span>
-                    </TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  <TableRow>
-                    <TableCell>
-                      <a href="#">آنچه شما دریافت می کنید</a>
-                    </TableCell>
-                    <TableCell>
-                      <a href="#">طرح توسعه</a>
-                    </TableCell>
-                    <TableCell>
-                      <span>طرح حق بیمه</span>
-                    </TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell>
-                      <a href="#">پست های شغلی شامل</a>
-                    </TableCell>
-                    <TableCell>
-                      <a href="#">پست 10 شغل</a>
-                    </TableCell>
-                    <TableCell>
-                      <span>پست 22 شغل</span>
-                    </TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell>
-                      <a href="#">شغل ویژه</a>
-                    </TableCell>
-                    <TableCell>
-                      <a href="#">20</a>
-                    </TableCell>
-                    <TableCell>
-                      <span>نامحدود</span>
-                    </TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell>
-                      <a href="#">روزهای نمایش داده شده</a>
-                    </TableCell>
-                    <TableCell>
-                      <a href="#">به مدت 10 روز</a>
-                    </TableCell>
-                    <TableCell>
-                      <span>به مدت 50 روز</span>
-                    </TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell>
-                      <a href="#">آمار ارسال شغل</a>
-                    </TableCell>
-                    <TableCell>
-                      <IconButton>
-                        <CheckIcon />
-                      </IconButton>
-                    </TableCell>
-                    <TableCell>
-                      <IconButton>
-                        <CheckIcon />
-                      </IconButton>
-                    </TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell>
-                      <a href="#">پست های هایلایت شده</a>
-                    </TableCell>
-                    <TableCell>
-                      <a href="#">5 پست</a>
-                    </TableCell>
-                    <TableCell>
-                      <span>نامحدود</span>
-                    </TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell>
-                      <a href="#">روزهای انقضای فهرست</a>
-                    </TableCell>
-                    <TableCell>
-                      <a href="#">60 روز</a>
-                    </TableCell>
-                    <TableCell>
-                      <span>200 روز</span>
-                    </TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell>
-                      <a href="#">پشتیبانی ایمیل</a>
-                    </TableCell>
-                    <TableCell>
-                      <a href="#">20 روز</a>
-                    </TableCell>
-                    <TableCell>
-                      <IconButton>
-                        <CheckIcon />
-                      </IconButton>
-                    </TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell></TableCell>
-                    <TableCell>
-                      <Button
-                        variant="contained"
-                        color="primary"
-                        className="w-full"
-                      >
-                        خرید <ShoppingCartIcon />
-                      </Button>
-                    </TableCell>
-                    <TableCell>
-                      <Button
-                        variant="contained"
-                        color="primary"
-                        className="w-full"
-                      >
-                        خرید کن <ShoppingCartIcon />
-                      </Button>
-                    </TableCell>
-                  </TableRow>
-                </TableBody>
-              </Table>
-            </TableContainer>
-          </Box>
-        </Grid>
+      <Box component="form">
+    <TableContainer>
+      <TableHead>
+        <TableRow>
+          <TableCell>آنچه شما دریافت می کنید</TableCell>
+          <TableCell className="">طرح توسعه</TableCell>
+          <TableCell className="border-t border-l">پست 22 شغل</TableCell>
+        </TableRow>
+      </TableHead>
 
-        {/* Pricing Content */}
-        <Grid item xs={12} md={6}>
+      <TableBody>
+        <TableRow>
+          <TableCell align="center">پست های شغلی شامل</TableCell>
+          <TableCell align="center" className="border-x">
+            پست 10 شغل
+          </TableCell>
+          <TableCell align="center" className="border-t border-l">
+            پست 22 شغل
+          </TableCell>
+        </TableRow>
+
+        <TableRow>
+          <TableCell align="center">شغل ویژه</TableCell>
+          <TableCell align="center" className="border-x">
+            20
+          </TableCell>
+          <TableCell align="center" className="border-t border-l">
+            نامحدود
+          </TableCell>
+        </TableRow>
+
+        <TableRow>
+          <TableCell align="center"> روزهای نمایش داده شده</TableCell>
+          <TableCell align="center" className="border-x">
+            به مدت 10 روز
+          </TableCell>
+          <TableCell align="center" className="border-t border-l">
+            به مدت 50 روز
+          </TableCell>
+        </TableRow>
+
+        <TableRow>
+          <TableCell align="center"> امار ارسال شغل</TableCell>
+          <TableCell align="center" className="border-x">
+            2
+          </TableCell>
+          <TableCell align="center" className="border-t border-l">
+            3
+          </TableCell>
+        </TableRow>
+
+             <TableRow>
+        <TableCell align="center"> پست های هایلایت شده</TableCell>
+        <TableCell align="center" className="border-x">
+          5 پست
+        </TableCell>
+        <TableCell align="center" className="border-t border-l">
+          نامحدود
+        </TableCell>
+      </TableRow>
+
+      <TableRow>
+        <TableCell align="center"> روز های انقضای فهرست</TableCell>
+        <TableCell align="center" className="border-x">
+          60 روز
+        </TableCell>
+        <TableCell align="center" className="border-t border-l">
+        
+          200 روز
+        </TableCell>
+      </TableRow>
+
+      <TableRow>
+        <TableCell align="center"> پشتیبانی ایمیل</TableCell>
+        <TableCell align="center" className="border-x">
+        
+          20 روز
+        </TableCell>
+        <TableCell align="center" className="border-t border-l">
+        
+          3
+        </TableCell>
+      </TableRow>
+      </TableBody>
+    </TableContainer>
+     </Box>
+
+    /* Pricing Content */
+     <Grid item xs={12} md={6}>
           <Box className="pl-5">
             <Typography variant="h4" gutterBottom>
-              بهترین روش های <b>قیمت گذاری</b>
+              بهترین روش های <b className="text-lightGreen">قیمت گذاری</b>
             </Typography>
             <Box className="mb-4 w-24 h-1 bg-gray-400" />
             <Typography variant="body1" paragraph>
-              لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم
-              ایپسوم به مدت 40 سال استاندارد صنعت بوده است.
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+              نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+              کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+              جامعه و متخصصان را می طلبد
             </Typography>
             <ul className="list-none flex space-x-3">
               <li>
@@ -220,9 +173,8 @@ const PricingTable = () => {
               2000+ کارفرمای برتر
             </Typography>
           </Box>
-        </Grid>
-      </Grid>
-    </Box>
+        </Grid> 
+    // </Box>
   );
 };
 
