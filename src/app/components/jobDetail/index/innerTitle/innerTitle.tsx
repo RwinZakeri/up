@@ -1,12 +1,11 @@
 import CircleIcon from "@mui/icons-material/Circle";
 import { Box, List, ListItem, Typography } from "@mui/material";
-c
-
-const InnerTitle = () => {
+import Link from "next/link";
+const InnerTitleJobDetail = () => {
   return (
-    <Box className="py-44 bg-lightGreenXXXXs text-center">
+    <Box className="w-full py-44 bg-lightGreenXXXXs text-center">
       <Typography variant="h1" className="text-5xl font-medium">
-        فهرست مشاغل
+        جزئیات مشاغل{" "}
       </Typography>
 
       <List className="text-center flex justify-center">
@@ -27,7 +26,7 @@ const InnerTitle = () => {
               href="/jobs"
               className="hover:text-highGreen transition-all duration-400"
             >
-              فهرست مشاغل
+              جزئیات مشاغل{" "}
             </Link>
           </Typography>
         </ListItem>
@@ -36,4 +35,4 @@ const InnerTitle = () => {
   );
 };
 
-export default InnerTitle;
+export default InnerTitleJobDetail;
