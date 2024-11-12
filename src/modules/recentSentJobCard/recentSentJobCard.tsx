@@ -17,7 +17,9 @@ const RecentSentJobCard = () => {
             alt="img"
           />
         </Box>
-        <Typography>کپی رایتر حرفه ای برای کسب تبلیغات</Typography>
+        <Typography className="font-semibold text-lg">
+          کپی رایتر حرفه ای برای کسب تبلیغات
+        </Typography>
         <Button sx={{ padding: 0, display: "block" }}>
           <BookmarkBorderIcon />
         </Button>

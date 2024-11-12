@@ -36,7 +36,9 @@ const BannerArea = async () => {
         شغل پیدا کنید، کارشناسان استخدام کنید یا در فروش و بازاریابی استخدام
         شوید
       </Typography>
-      <BannerFrom />
+      <Box className="w-[980px]">
+        <BannerFrom />
+      </Box>
       <PopularSearch popularSearch={popularSearch} />
       <UsersProfile />
       <Box

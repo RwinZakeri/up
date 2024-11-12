@@ -23,7 +23,9 @@ const config: Config = {
         lightOrange: "#f26e8a",
         lightPink: "#fcedf6",
         pink: "#f05ba1",
-        gold : "#faa02f"
+        gold: "#faa02f",
+        lightGreenXXXXs: "#F2F6F0",
+        grayXlight: "#F8F8F8",
       },
     },
   },
