@@ -1,20 +1,28 @@
 import BannerForm from "@/modules/form/bannerFrom";
-import { Box, Container } from "@mui/material";
+import JobCategory from "@/modules/jobCategory/jobCategory";
+import JobCategoryGender from "@/modules/jobCategoryGender/jobCategoryGender";
+import NotificationJob from "@/modules/notificationJob/notificationJob";
+import { Box } from "@mui/material";
 import JobListStatus from "../joblistStatus/jobListStatus";
 import JobsCardContainer from "../jobsCardContainer/jobsCardContainer";
-
 const JobListingArea = () => {
   return (
-    <Container maxWidth="lg">
-      <BannerForm />
-      <Box className="w-full flex gap-2 flex-col">
-        <Box className="w-full lg:w-2/5 h-screen bg-red-500 rounded-xl"></Box>
-        <Box className="w-full lg:w-3/5 h-screen bg-blue-500 rounded-xl px-4">
+    <Box className="mx-auto max-w-[1290px]">
+      <Box className="w-full md:w-5/6 lg:w-full mx-auto bg-grayXlight rounded-xl">
+        <BannerForm />
+      </Box>
+      <Box className="w-full flex gap-0 flex-col lg:flex-row">
+        <Box className="w-full md:w-5/6 mx-auto lg:w-2/6  rounded-xl  px-4 ">
+          <NotificationJob />
+          <JobCategory />
+          <JobCategoryGender />
+        </Box>
+        <Box className="w-full px-4  md:w-5/6 mx-auto lg:w-5/6  bg--500 rounded-xl ">
           <JobListStatus />
           <JobsCardContainer />
         </Box>
       </Box>
-    </Container>
+    </Box>
   );
 };
 

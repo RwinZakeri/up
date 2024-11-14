@@ -26,6 +26,8 @@ const config: Config = {
         gold: "#faa02f",
         lightGreenXXXXs: "#F2F6F0",
         grayXlight: "#F8F8F8",
+        mainRed: "#C90000",
+        lightXRed: "#FAE5E5",
       },
     },
   },
