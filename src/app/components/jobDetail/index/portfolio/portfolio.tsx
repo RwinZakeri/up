@@ -9,7 +9,7 @@ const Portfolio = () => {
   return (
     <Box>
       <h2 className="text-[22px]">نمونه کارها ما</h2>
-      <Box className="w-[30%]">
+      <Box className="w-[15%]">
         <AnimateLine />
       </Box>
       <Box className="w-full flex flex-wrap gap-x-5 justify-center items-center ">
