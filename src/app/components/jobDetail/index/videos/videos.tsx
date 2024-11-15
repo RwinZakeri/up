@@ -1,18 +1,18 @@
+import jobDetail from "@/assets/images/videos/job-detail.jpg";
 import AnimateLine from "@/modules/animateLine/animateLine";
-import { Box } from "@mui/material";
-import jobDetail from "@/assets/images/videos/job-detail.jpg"
-import Link from "next/link";
+import { Box, Typography } from "@mui/material";
 import Image from "next/image";
+import Link from "next/link";
 const Videos = () => {
   return (
     <Box className="pt-[30px]">
-      <h2 className="text-[22px]"> ویدئو </h2>
-      <Box className="w-[15%]">
+      <Typography className="text-2xl font-medium">ویدئو</Typography>
+      <Box className="w-fit">
         <AnimateLine />
       </Box>
       <Box>
         <Link href="">
-           <Image alt="" src={jobDetail}></Image>
+          <Image alt="" src={jobDetail}></Image>
         </Link>
       </Box>
     </Box>

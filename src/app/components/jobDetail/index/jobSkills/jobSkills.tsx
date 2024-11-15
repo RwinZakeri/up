@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const JobSkills = () => {
   return (
-    <Box className="  p-4 shadow-slate-400 boxShadowJob mt-[30px]">
+    <Box className=" rounded-xl p-4 shadow-slate-400 boxShadowJob mt-[30px]">
       <h2 className="text-[22px]">بررسی اجمالی محصول</h2>
       <Box className="w-[30%]">
         <AnimateLine />

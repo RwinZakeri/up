@@ -10,7 +10,7 @@ import Image from "next/image";
 
 const DreamJobCard = () => {
   return (
-    <Box className="w-full p-4 relative overflow-hidden bg-mainWhite flex flex-col md:flex-row md:items-center gap-3 group">
+    <Box className="w-full p-4 relative overflow-hidden bg-mainWhite flex flex-col md:flex-row md:items-center gap-3 group boxShadowJob rounded-xl">
       <Box className={"h-36"}>
         <Image
           src={jobImage}

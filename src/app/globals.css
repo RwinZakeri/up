@@ -178,6 +178,15 @@
   margin: 0 !important;
 }
 
-.boxShadowJob{
-  box-shadow: 0 0 15px rgba(0, 0, 0, .06);
+.boxShadowJob {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.09);
+}
+
+/* Add this CSS to handle RTL pagination arrows */
+.MuiPagination-ul {
+  direction: rtl;
+}
+
+.MuiPaginationItem-previousNext {
+  transform: rotate(180deg);
 }
