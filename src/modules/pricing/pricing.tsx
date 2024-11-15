@@ -2,14 +2,10 @@
 import myImage from "@/assets/images/user-img/user-img1.jpg";
 import { AddShoppingCart } from "@mui/icons-material";
 import CheckIcon from "@mui/icons-material/Check";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import {
   Box,
   Button,
-  Grid,
   Grid2,
-  IconButton,
-  Table,
   TableBody,
   TableCell,
   TableContainer,
@@ -46,14 +42,19 @@ const PricingTable = () => {
                 </TableRow>
 
                 <TableRow>
-                  <TableCell className="text-xl">آنچه شما دریافت می کنید</TableCell>
+                  <TableCell className="text-xl">
+                    آنچه شما دریافت می کنید
+                  </TableCell>
                   <TableCell
                     align="center"
                     className="border-t border-r bg-lightGreenXXs text-lightGreen text-xl"
                   >
                     طرح توسعه
                   </TableCell>
-                  <TableCell align="center" className="border-t border-x text-xl">
+                  <TableCell
+                    align="center"
+                    className="border-t border-x text-xl"
+                  >
                     طرح حق بیمه
                   </TableCell>
                 </TableRow>

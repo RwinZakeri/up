@@ -1,8 +1,13 @@
+import AboutCompany from "@/app/components/jobDetail/index/aboutCompany/aboutCompany";
 import EmployerLocation from "@/app/components/jobDetail/index/employerLocation/employerLocation";
+import FileUpload from "@/app/components/jobDetail/index/fileUpload/fileUpload";
 import InnerTitleJobDetail from "@/app/components/jobDetail/index/innerTitle/innerTitle";
 import JobDescription from "@/app/components/jobDetail/index/jobDescription/jobDescription";
 import JobReview from "@/app/components/jobDetail/index/jobReview/jobReview";
 import JobSkills from "@/app/components/jobDetail/index/jobSkills/jobSkills";
+import Portfolio from "@/app/components/jobDetail/index/portfolio/portfolio";
+import RelatedJobs from "@/app/components/jobDetail/index/relatedJobs/relatedJobs";
+import Videos from "@/app/components/jobDetail/index/videos/videos";
 import DreamJobCard from "@/modules/dreamJobCard/dreamJobCard";
 import { Box } from "@mui/material";
 
@@ -16,11 +21,17 @@ const JobDetailComponent = () => {
           <JobReview />
           <EmployerLocation/>
           <JobSkills />
+          <AboutCompany/>
         </Box>
         <Box className="lg:w-[60%]">
           <JobDescription />
+          <Portfolio/>
+          <Videos/>
+          <RelatedJobs/>
+          
         </Box>
       </Box>
+      <FileUpload/>
     </Box>
   );
 };

@@ -1,47 +1,55 @@
-import { Typography } from "@mui/material";
-import Box from "@mui/material/Box";
-import FormControl from "@mui/material/FormControl";
-import InputLabel from "@mui/material/InputLabel";
-import MenuItem from "@mui/material/MenuItem";
-import Select from "@mui/material/Select";
+"use client";
+import {
+  Box,
+  FormControl,
+  InputLabel,
+  MenuItem,
+  Select,
+  Typography,
+} from "@mui/material";
+import { useState } from "react";
 
 const JobListStatus = () => {
+  const [firstSelectValue, setFirstSelectValue] = useState("");
+  const [secondSelectValue, setSecondSelectValue] = useState("");
+
   return (
-    <Box className="flex items-start justify-between flex-col  bg-green-500">
-      <Box className="w-2/5">
-        <Typography className="text-lg font-medium">
-          نمایش 1 تا 6 از 145 نتیجه
-        </Typography>
-      </Box>
-      <Box className="flex w-full lg:w-3/5 gap-16 justify-between lg:gap-4 mt-3">
-        <FormControl fullWidth>
-          <InputLabel id="demo-simple-select-label">Age</InputLabel>
+    <Box className="flex w-full  flex-col md:flex-row  md:justify-between md:items-center ">
+      <Typography className="text-lg font-medium my-2">
+        نمایش 1 تا 6 از 145 نتیجه
+      </Typography>
+
+      <Box className="flex w-full md:w-2/5 flex-col md:flex-row gap-2">
+        {/* First Select Dropdown */}
+        <FormControl fullWidth className="w-full mt-2 md:mt-0">
+          <InputLabel id="first-select-label">بر اساس </InputLabel>
           <Select
-            className="bg-grayXlight rounded-lg"
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
-            value={"age"}
-            label="Age"
-            sx={{ height: "40px", width: "100%" }}
+            labelId="first-select-label"
+            id="first-select"
+            value={firstSelectValue}
+            label="بر اساس )"
+            onChange={(e) => setFirstSelectValue(e.target.value)}
+            sx={{ height: 45 }}
           >
             <MenuItem value={10}>Ten</MenuItem>
             <MenuItem value={20}>Twenty</MenuItem>
             <MenuItem value={30}>Thirty</MenuItem>
           </Select>
         </FormControl>
-        <FormControl fullWidth>
-          <InputLabel id="demo-simple-select-label">Age</InputLabel>
+
+        {/* Second Select Dropdown */}
+        <FormControl fullWidth className="w-full mt-2 md:mt-0">
+          <InputLabel id="second-select-label">06 در هر صفحه</InputLabel>
           <Select
-            className="bg-grayXlight rounded-lg"
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
-            value={"age"}
-            label="Age"
-            sx={{ height: "40px", width: "100%" }}
+            labelId="second-select-label"
+            id="second-select"
+            value={secondSelectValue}
+            label="06 در هر صفحه"
+            onChange={(e) => setSecondSelectValue(e.target.value)}
+            sx={{ height: 45 }}
           >
-            <MenuItem value={10}>Ten</MenuItem>
-            <MenuItem value={20}>Twenty</MenuItem>
-            <MenuItem value={30}>Thirty</MenuItem>
+            <MenuItem value={10}>Option 1</MenuItem>
+            <MenuItem value={20}>Option 2</MenuItem>
           </Select>
         </FormControl>
       </Box>
