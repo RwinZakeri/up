@@ -12,7 +12,6 @@ const UsersProfile = () => {
         gap: 1,
         padding: 1,
         paddingTop: 2,
-        marginY: 6,
       }}
     >
       <Typography variant="h6">{1000}+ داوطلب</Typography>

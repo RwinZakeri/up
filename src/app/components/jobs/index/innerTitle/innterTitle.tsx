@@ -1,5 +1,6 @@
 import CircleIcon from "@mui/icons-material/Circle";
 import { Box, List, ListItem, Typography } from "@mui/material";
+import Link from "next/link";
 
 const InnerTitle = () => {
   return (

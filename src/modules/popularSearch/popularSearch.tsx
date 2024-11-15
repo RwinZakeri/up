@@ -7,19 +7,13 @@ const PopularSearch = ({
   popularSearch: popularSearch[];
 }) => {
   return (
-    <Box sx={{ display: "flex", gap: 2 }}>
+    <Box sx={{ display: "flex", gap: 2, alignItems: "center" }}>
       <Typography variant="h6" component="div" className="font-light">
         جستجوهای محبوب :
       </Typography>
-      <Box>
+      <Box className="flex gap-2 text-gray-500 text-xs items-center">
         {popularSearch.map((item) => (
-          <Typography
-            variant="h6"
-            className="text-mainGray font-light"
-            sx={{ color: "inherit", marginX: 0.5, display: "inline" }}
-          >
-            {item?.title}
-          </Typography>
+          <Typography>{item?.title} ,</Typography>
         ))}
       </Box>
     </Box>
