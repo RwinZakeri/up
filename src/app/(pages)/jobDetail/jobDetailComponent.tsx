@@ -1,38 +1,21 @@
-import AboutCompany from "@/app/components/jobDetail/index/aboutCompany/aboutCompany";
-import EmployerLocation from "@/app/components/jobDetail/index/employerLocation/employerLocation";
-import FileUpload from "@/app/components/jobDetail/index/fileUpload/fileUpload";
-import InnerTitleJobDetail from "@/app/components/jobDetail/index/innerTitle/innerTitle";
-import JobDescription from "@/app/components/jobDetail/index/jobDescription/jobDescription";
-import JobReview from "@/app/components/jobDetail/index/jobReview/jobReview";
-import JobSkills from "@/app/components/jobDetail/index/jobSkills/jobSkills";
-import Portfolio from "@/app/components/jobDetail/index/portfolio/portfolio";
-import RelatedJobs from "@/app/components/jobDetail/index/relatedJobs/relatedJobs";
-import Videos from "@/app/components/jobDetail/index/videos/videos";
+import InnerTitle from "@/app/components/jobs/index/innerTitle/innterTitle";
+import DetailComponents from "@/modules/DetailsComponent/detailsComponent";
 import DreamJobCard from "@/modules/dreamJobCard/dreamJobCard";
-import { Box } from "@mui/material";
+import { InnerTitleInfo } from "@/types/type";
 
 const JobDetailComponent = () => {
+  const innerTitleInfo: InnerTitleInfo = {
+    title: "جزئیات مشاغل",
+    mainRouteTitle: "خانه",
+    mainRouteAddress: "/",
+    current: "جزئیات مشاغل",
+    currentAddress: "/jobDetail",
+  };
   return (
-    <Box>
-      <InnerTitleJobDetail />
-      <DreamJobCard />
-      <Box className="flex justify-center items-start flex-wrap gap-x-5">
-        <Box className="lg:w-[30%]">
-          <JobReview />
-          <EmployerLocation/>
-          <JobSkills />
-          <AboutCompany/>
-        </Box>
-        <Box className="lg:w-[60%]">
-          <JobDescription />
-          <Portfolio/>
-          <Videos/>
-          <RelatedJobs/>
-          
-        </Box>
-      </Box>
-      <FileUpload/>
-    </Box>
+    <>
+      <InnerTitle innerTitleInfo={innerTitleInfo} />
+      <DetailComponents topMainCard={<DreamJobCard />} />
+    </>
   );
 };
 

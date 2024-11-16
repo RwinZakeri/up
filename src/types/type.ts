@@ -30,5 +30,13 @@ export interface Freelancer {
   rate: number;
   jobPosition: string;
   rateMoney: string;
-  description : string
+  description: string;
+}
+
+export interface InnerTitleInfo {
+  title: string;
+  mainRouteTitle: string;
+  mainRouteAddress: string;
+  current: string;
+  currentAddress: string;
 }

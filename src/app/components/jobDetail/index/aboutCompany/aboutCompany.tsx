@@ -1,10 +1,11 @@
 import AnimateLine from "@/modules/animateLine/animateLine";
-import { Box, Button } from "@mui/material";
+import CopyButtom from "@/modules/copyButtom/copyButtom";
+import { Box } from "@mui/material";
 import Link from "next/link";
 
 const AboutCompany = () => {
   return (
-    <Box className="  p-4 shadow-slate-400 boxShadowJob mt-[30px]">
+    <Box className=" rounded-xl p-4 shadow-slate-400 boxShadowJob mt-[30px]">
       <Box>
         <h2 className="text-[22px]"> درباره شرکت </h2>
       </Box>
@@ -59,7 +60,7 @@ const AboutCompany = () => {
         </ul>
       </Box>
       <Box className="mt-[20px]">
-        <Button className="bg-lightGreenXXs text-lightGreen py-[10px] px-[30px] text-[13px] w-full transition-all duration-[500ms] hover:bg-lightGreen hover:text-white">www.zobencontact.com</Button>
+        <CopyButtom title={"www.zobencontact.com"} />
       </Box>
     </Box>
   );

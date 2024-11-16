@@ -1,22 +1,23 @@
+import type { InnerTitleInfo } from "@/types/type";
 import CircleIcon from "@mui/icons-material/Circle";
 import { Box, List, ListItem, Typography } from "@mui/material";
 import Link from "next/link";
 
-const InnerTitle = () => {
+const InnerTitle = ({ innerTitleInfo }: { innerTitleInfo: InnerTitleInfo }) => {
   return (
     <Box className="py-44 bg-lightGreenXXXXs text-center">
       <Typography variant="h1" className="text-5xl font-medium">
-        فهرست مشاغل
+        {innerTitleInfo.title}
       </Typography>
 
       <List className="text-center flex justify-center">
         <ListItem className="justify-center gap-2">
           <Typography>
             <Link
-              href="/"
+              href={innerTitleInfo.mainRouteAddress}
               className="hover:text-highGreen transition-all duration-400"
             >
-              خانه
+              {innerTitleInfo.mainRouteTitle}
             </Link>
           </Typography>
           <Typography variant="button">
@@ -24,10 +25,10 @@ const InnerTitle = () => {
           </Typography>
           <Typography>
             <Link
-              href="/jobs"
+              href={innerTitleInfo.currentAddress}
               className="hover:text-highGreen transition-all duration-400"
             >
-              فهرست مشاغل
+              {innerTitleInfo.current}
             </Link>
           </Typography>
         </ListItem>

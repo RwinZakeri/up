@@ -3,7 +3,7 @@ import { Box } from "@mui/material";
 
 const JobReview = () => {
   return (
-    <Box className="  p-4 shadow-slate-400 boxShadowJob mt-[30px]">
+    <Box className="shadow-none rounded-xl p-4 shadow-slate-400 boxShadowJob mt-[30px]">
       <Box>
         <h2 className="text-[22px]">بررسی اجمالی محصول</h2>
       </Box>

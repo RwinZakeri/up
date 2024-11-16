@@ -31,7 +31,7 @@ const Header = () => {
   return (
     <header
       className={`w-full fixed top-0 px-4 left-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-mainWhite" : "bg-transparent"
+        isScrolled ? "bg-mainWhite shadow-md" : "bg-transparent"
       }`}
     >
       <Box
