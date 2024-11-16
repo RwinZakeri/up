@@ -14,11 +14,7 @@ import {
 
 const BannerForm = () => {
   return (
-<<<<<<< HEAD
-    <form className=" w-full relative z-10 flex flex-col lg:flex-row gap-5 md:gap-2 p-2 lg:h-[72px] rounded-xl my-6 bg-mainWhite ">
-=======
     <form className=" w-full relative z-10 flex flex-col lg:flex-row gap-5 md:gap-2 py-8 lg:py-2 lg:h-[72px] rounded-xl my-6 bg-grayXlight px-4 ">
->>>>>>> 4ab72be6e4d276c166219bbe62294a629b4a3474
       <Box className="lg:w-3/4 flex gap-5 md:gap-2 flex-col md:flex-row lg:h-full">
         <TextField
           id="outlined-basic"
