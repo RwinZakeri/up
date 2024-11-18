@@ -4,6 +4,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Box } from "@mui/material";
+import Link from "next/link";
 
 const FooterSocialMedia = () => {
   const dbFooterSocialMedia = [
@@ -15,7 +16,7 @@ const FooterSocialMedia = () => {
   return (
     <Box className="flex gap-4">
       {dbFooterSocialMedia.map((item) => (
-        <Box component="span">{item.icon}</Box>
+        <Link href="#">{item.icon}</Link>
       ))}
     </Box>
   );

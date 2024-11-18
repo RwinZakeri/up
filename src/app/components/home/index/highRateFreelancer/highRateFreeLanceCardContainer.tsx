@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 const HighRateFreeLanceCardContainer = () => {
   const { freeLancers } = db;
   return (
-    <Box className="pt-8 flex items-center flex-wrap gap-10 justify-center">
+    <Box className="pt-8 flex items-center flex-wrap gap-10 justify-between">
       {freeLancers?.map((item: Freelancer) => (
         <HighRateFreeLanceCard {...item} />
       ))}

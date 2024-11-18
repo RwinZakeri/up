@@ -1,9 +1,10 @@
 import AnimateLine from "@/modules/animateLine/animateLine";
 import { Box } from "@mui/material";
+import UploadFileIcon from "@mui/icons-material/UploadFile";
 
 const FileUpload = () => {
   return (
-    <Box className="mt-[20px] bg-lightGreen flex justify-around items-center w-[90%] mx-auto py-[40px] rounded-[30px]">
+    <Box className="standardContainer absolute top-[-25%] left-1/2 -translate-x-1/2 mt-5 bg-lightGreen flex justify-between items-center py-16 px-10 rounded-[30px]">
       <Box>
         <h2 className="text-[40px] text-white">
           اجازه دهید کارفرمایان شما را پیدا کنند
@@ -11,11 +12,26 @@ const FileUpload = () => {
         <Box className="w-[15%]">
           <AnimateLine />
         </Box>
-        <p className="text-white">مشاغل خود را برای میلیون ها کاربر ماهانه تبلیغ کنید و 15.8 میلیون رزومه را در پایگاه داده ما جستجو کنید.</p>
+        <p className="text-white">
+          مشاغل خود را برای میلیون ها کاربر ماهانه تبلیغ کنید و 15.8 میلیون
+          رزومه را در پایگاه داده ما جستجو کنید.
+        </p>
       </Box>
-      <Box >
-        <input type="file" className="hidden w-0 h-0" name="upload" id="upload" placeholder="بارگذاری" />
-        <label className="cursor-pointer px-[30px] py-[12px] text-[18px] text-center overflow-hidden bg-white text-black rounded transition-all duration-[500ms] hover:bg-black hover:text-white" htmlFor="upload">بارگذاری رزومه</label>
+      <Box>
+        <input
+          type="file"
+          className="hidden w-0 h-0"
+          name="upload"
+          id="upload"
+          placeholder="بارگذاری"
+        />
+        <label
+          className="flex gap-2 cursor-pointer px-8 py-3 text-lg text-center overflow-hidden bg-white text-black rounded transition-all duration-[500ms] hover:bg-black hover:text-white"
+          htmlFor="upload"
+        >
+          بارگذاری رزومه
+          <UploadFileIcon />
+        </label>
       </Box>
     </Box>
   );
