@@ -3,6 +3,7 @@ import React from 'react'
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import PhoneIcon from '@mui/icons-material/Phone';
+import NavItems from '@/modules/layout/header/navItems/navItems';
 
 
 const FooterInformationBox = () => {
@@ -12,11 +13,11 @@ const FooterInformationBox = () => {
         {id: 3, icon: <PhoneIcon className='text-lightGreen'/>, information: " +44 4325 9878 5875 "},
     ]
   return (
-    <Box sx={{display: "flex", flexDirection: "column", gap: "1rem"}}>
+    <Box className="flex flex-col gap-4">
     {footerInformation.map((item) => (
-            <Box component="span" display="flex" alignContent="center">
+            <Box key={item.id} component="span" className='flex items-center gap-2'>
                 {item.icon}
-                <Typography component="span" variant='body1'>
+                <Typography component="span" variant='body1' className='text-gray-500'>
                     {item.information}
                 </Typography>
             </Box>

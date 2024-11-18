@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+import Link from "next/link";
 import React from "react";
 
 const FooterBoxDetails = () => {
@@ -43,25 +44,25 @@ const FooterBoxDetails = () => {
   return (
     <>
       {footerData.map((item) => (
-        <Box sx={{display: "flex", flexDirection: "column", gap: "0.5rem"}}>
+        <Box key={item.id} className="flex flex-col gap-2">
           <Typography variant="h3" component="h3" className="text-2xl mb-4">
             {item.title}
           </Typography>
-          <Box component="span" sx={{ color: "#BDBDBD" }}>
+          <Link href="#" className="text-gray-500 hover:text-lightGreen">
             {item.item1}
-          </Box>
-          <Box component="span" sx={{ color: "#BDBDBD" }}>
+          </Link>
+          <Link href="#" className="text-gray-500 hover:text-lightGreen">
             {item.item2}
-          </Box>
-          <Box component="span" sx={{ color: "#BDBDBD" }}>
+          </Link>
+          <Link href="#" className="text-gray-500 hover:text-lightGreen">
             {item.item3}
-          </Box>
-          <Box component="span" sx={{ color: "#BDBDBD" }}>
+          </Link>
+          <Link href="#" className="text-gray-500 hover:text-lightGreen">
             {item.item4}
-          </Box>
-          <Box component="span" sx={{ color: "#BDBDBD" }}>
+          </Link>
+          <Link href="#" className="text-gray-500 hover:text-lightGreen">
             {item.item5}
-          </Box>
+          </Link>
         </Box>
       ))}
     </>
