@@ -35,7 +35,7 @@ const Header = () => {
       }`}
     >
       <Box
-        className="standardContainer"
+        className=""
         sx={{
           width: "100%",
           display: "flex",
