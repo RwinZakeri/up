@@ -7,8 +7,8 @@ import HighRateFreeLanceCardContainer from "./highRateFreeLanceCardContainer";
 const HighRateFreelancer = () => {
   return (
     <Box className="w-full">
-      <Box className="py-24 px-8 max-w-[1280px] mx-auto">
-        <Box className="w-full flex flex-col-reverse  justify-center md:flex-row md:items-start items-center">
+      <Box className="standardContainer py-24">
+        <Box className="w-full flex flex-col-reverse justify-center md:flex-row md:items-start items-center">
           <Box className="md:w-1/2">
             <Typography
               variant="h2"

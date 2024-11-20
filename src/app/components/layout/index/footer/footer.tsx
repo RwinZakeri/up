@@ -6,11 +6,13 @@ import Logo from "@/assets/images/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import FooterSocialMedia from "./footerSocialMedia";
+import FileUpload from "@/modules/fileUpload/fileUpload";
 
 const Footer = () => {
   return (
-    <footer className="bg-lightGreenXXXs px-4 pt-24 pb-20">
-      <Box className="standardContainer">
+    <footer className="relative bg-lightGreenXXXs px-4 pt-24 pb-20">
+      <FileUpload/>
+      <Box className="standardContainer pt-24">
         <Box className="flex justify-between">
           <Box>
             <Box className="flex flex-col gap-10">

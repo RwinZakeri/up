@@ -1,6 +1,5 @@
 import type { Freelancer } from "@/types/type";
-import StarIcon from "@mui/icons-material/Star";
-import { Box, List, ListItem, Typography } from "@mui/material";
+import { Box, Rating, Typography } from "@mui/material";
 import Image from "next/image";
 
 const HighRateFreeLanceCard = ({
@@ -16,35 +15,29 @@ const HighRateFreeLanceCard = ({
   const blueStars = totalStars - goldStars; // Remaining stars are blue
 
   return (
-    <Box className="flex flex-col items-center justify-center gap-4 shadow-xl w-fit p-4 rounded-xl">
+    <Box className="flex flex-col items-center justify-center gap-3 shadow-xl w-full md:w-fit p-6 lg:p-3 xl:p-10 rounded-xl">
       <Image
         src={imgAddress}
         alt="freelance"
-        className="w-20 rounded-full border-4 border-highGreen"
+        className="w-24 rounded-full border-4 border-highGreen"
         width={100}
         height={100}
       />
-      <Typography className="font-medium">{title}</Typography>
-      <Typography className="text-gray-400">{description}</Typography>
-      <List sx={{ display: "flex", gap: 1 }}>
-        {/* Render gold stars */}
-        {Array.from({ length: goldStars }).map((_, index) => (
-          <ListItem sx={{ padding: 0 }} key={`gold-${index}`}>
-            <StarIcon className="text-gold text-[20px]" />
-          </ListItem>
-        ))}
-        {/* Render blue stars */}
-        {Array.from({ length: blueStars }).map((_, index) => (
-          <ListItem sx={{ padding: 0 }} key={`blue-${index}`}>
-            <StarIcon className="text-mainGray text-[20px]" />
-          </ListItem>
-        ))}
-      </List>
-      <Box className="flex flex-col md:flex-row items-center justify-between px-12 md:px-0 gap-2 md:gap-8">
+      <Typography className="2xl:w-96 w-fit text-center font-semibold text-lg">
+        {title}
+      </Typography>
+      <Typography className="text-gray-400 text-base">{description}</Typography>
+      <Box>
+        <Rating name="read-only" value={1} readOnly />
+      </Box>
+      <Box className="flex flex-col md:flex-row items-center justify-between px-12  md:px-0 md:gap-8  w-full">
         <Box>
           <Typography sx={{ display: "flex", color: "gray" }}>
             موفقیت شغلی :{" "}
-            <Typography variant="caption" className="text-base text-black">
+            <Typography
+              variant="caption"
+              className="text-base font-semibold text-black"
+            >
               {jobPosition}%
             </Typography>
           </Typography>
@@ -52,7 +45,10 @@ const HighRateFreeLanceCard = ({
         <Box>
           <Typography sx={{ display: "flex", color: "gray" }}>
             امتیاز :{" "}
-            <Typography variant="caption" className="text-base text-black">
+            <Typography
+              variant="caption"
+              className="text-base font-semibold text-black"
+            >
               {rateMoney} تومان در ماه
             </Typography>
           </Typography>

@@ -17,11 +17,11 @@ import Image from "next/image";
 
 const PricingTable = () => {
   return (
-    <Box className="pt-24 pb-16">
-      <Grid2 container spacing={6} justifyContent="center" alignItems="center">
-        <Grid2 size={6} display="flex" justifyContent="end">
+    <Box className="standardContainer pt-24 pb-16 mb-40">
+      <Grid2 container spacing={6} justifyContent="space-between" alignItems="center">
+
           <Box component="form">
-            <TableContainer>
+            <TableContainer sx={{'& .MuiTableCell-root': {padding: '1rem 3rem'}}}>
               <TableHead>
                 <TableRow>
                   <TableCell className="border-none"></TableCell>
@@ -62,7 +62,7 @@ const PricingTable = () => {
 
               <TableBody>
                 <TableRow>
-                  <TableCell align="right">پست های شغلی شامل</TableCell>
+                  <TableCell align="right" className="border-r">پست های شغلی شامل</TableCell>
                   <TableCell
                     align="center"
                     className="border-x bg-lightGreenXXs text-lightGreen"
@@ -75,7 +75,7 @@ const PricingTable = () => {
                 </TableRow>
 
                 <TableRow>
-                  <TableCell align="right">شغل ویژه</TableCell>
+                  <TableCell align="right" className="border-r">شغل ویژه</TableCell>
                   <TableCell
                     align="center"
                     className="border-x bg-lightGreenXXs text-lightGreen"
@@ -88,7 +88,7 @@ const PricingTable = () => {
                 </TableRow>
 
                 <TableRow>
-                  <TableCell align="right"> روزهای نمایش داده شده</TableCell>
+                  <TableCell align="right" className="border-r"> روزهای نمایش داده شده</TableCell>
                   <TableCell
                     align="center"
                     className="border-x bg-lightGreenXXs text-lightGreen"
@@ -101,7 +101,7 @@ const PricingTable = () => {
                 </TableRow>
 
                 <TableRow>
-                  <TableCell align="right"> امار ارسال شغل</TableCell>
+                  <TableCell align="right" className="border-r"> امار ارسال شغل</TableCell>
                   <TableCell
                     align="center"
                     className="border-x bg-lightGreenXXs text-lightGreen"
@@ -117,7 +117,7 @@ const PricingTable = () => {
                 </TableRow>
 
                 <TableRow>
-                  <TableCell align="right"> پست های هایلایت شده</TableCell>
+                  <TableCell align="right" className="border-r"> پست های هایلایت شده</TableCell>
                   <TableCell
                     align="center"
                     className="border-x bg-lightGreenXXs text-lightGreen"
@@ -130,7 +130,7 @@ const PricingTable = () => {
                 </TableRow>
 
                 <TableRow>
-                  <TableCell align="right"> روز های انقضای فهرست</TableCell>
+                  <TableCell align="right" className="border-r"> روز های انقضای فهرست</TableCell>
                   <TableCell
                     align="center"
                     className="border-x bg-lightGreenXXs text-lightGreen"
@@ -143,7 +143,7 @@ const PricingTable = () => {
                 </TableRow>
 
                 <TableRow>
-                  <TableCell align="right"> پشتیبانی ایمیل</TableCell>
+                  <TableCell align="right" className="border-r"> پشتیبانی ایمیل</TableCell>
                   <TableCell
                     align="center"
                     className="border-x bg-lightGreenXXs text-lightGreen"
@@ -185,10 +185,10 @@ const PricingTable = () => {
               </TableBody>
             </TableContainer>
           </Box>
-        </Grid2>
+
         {/* Pricing Content  */}
 
-        <Grid2 size={6}>
+
           <Box className="pl-5">
             <Typography variant="h4" gutterBottom>
               بهترین روش های <b className="text-lightGreen">قیمت گذاری</b>
@@ -253,7 +253,7 @@ const PricingTable = () => {
               2000+ کارفرمای برتر
             </Typography>
           </Box>
-        </Grid2>
+
       </Grid2>
     </Box>
   );
