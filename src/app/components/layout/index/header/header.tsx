@@ -35,7 +35,11 @@ const Header = () => {
       }`}
     >
       <Box
+<<<<<<< HEAD
+        className="w-full xl:w-11/12 mx-auto"
+=======
         className=""
+>>>>>>> c781da8df2d62a3473dbb0bfd224ec8d2ba46610
         sx={{
           width: "100%",
           display: "flex",
