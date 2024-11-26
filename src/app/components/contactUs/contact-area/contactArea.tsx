@@ -41,26 +41,25 @@ const ContactArea = () => {
 
   return (
     <Container
-      className="mt-[30px] w-[60%] mx-auto"
+      className="mt-[30px] w-[60%] mx-auto border-[1px] border-[#bbbbbb] rounded-[10px]"
       component="form"
       onSubmit={handleSubmit}
       sx={{ mt: 2 }}
     >
       <Typography variant="h4" mb={2} textAlign="center">
-        نظرات بدهید
+       نظر بدهید
       </Typography>
-      <TextField
-        fullWidth
+ <Box>
+ <TextField
         label="ایمیل شما"
         variant="outlined"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         error={errors.email}
         helperText={errors.email ? "لطفا ایمیل خود را وارد کنید" : ""}
-        sx={{ mb: 2 }}
+        sx={{ mb: 2}}
       />
       <TextField
-        fullWidth
         label="نام شما"
         variant="outlined"
         value={name}
@@ -68,15 +67,13 @@ const ContactArea = () => {
         sx={{ mb: 2 }}
       />
       <TextField
-        fullWidth
         label="شماره تلفن"
         variant="outlined"
         value={phoneNumber}
         onChange={(e) => setPhoneNumber(e.target.value)}
         sx={{ mb: 2 }}
       />
-      <TextField
-        fullWidth
+      <TextField 
         label="موضوع شما"
         variant="outlined"
         value={subject}
@@ -84,15 +81,15 @@ const ContactArea = () => {
         sx={{ mb: 2 }}
       />
       <TextField
-        fullWidth
         label="پیام شما"
         variant="outlined"
         multiline
         rows={4}
         value={message}
         onChange={(e) => setMessage(e.target.value)}
-        sx={{ mb: 2 }}
+        sx={{ mb: 2}}
       />
+ </Box>
       <FormControlLabel
         control={
           <Checkbox

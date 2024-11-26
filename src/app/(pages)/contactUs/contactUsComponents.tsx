@@ -17,7 +17,7 @@ const ContactUsComponents = () => {
             {/* <ContactUs/> */}
             <InnerTitle innerTitleInfo={innerTitleInfo}/>
             <SectionTitle/>
-            <ContactArea/>
+            {/* <ContactArea/> */}
         </Box>
      );
 }
