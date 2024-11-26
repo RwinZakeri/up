@@ -5,15 +5,15 @@ import {
   AccordionDetails,
   AccordionSummary,
   Box,
+  Checkbox,
   Typography,
 } from "@mui/material";
 import FormControl from "@mui/material/FormControl";
 import FormControlLabel from "@mui/material/FormControlLabel";
-import Radio from "@mui/material/Radio";
-import RadioGroup from "@mui/material/RadioGroup";
 
 const JobCategory = () => {
   const { jobCategory } = db;
+  const label = { inputProps: { "aria-label": "Checkbox demo" } };
   return (
     <>
       {jobCategory?.map((item) => (
@@ -41,33 +41,26 @@ const JobCategory = () => {
           </AccordionSummary>
           <AccordionDetails sx={{ padding: 2 }}>
             <FormControl sx={{ padding: 0 }} className="w-full ">
-              <RadioGroup
-                sx={{ padding: 0, width: "100%" }}
-                aria-labelledby="demo-radio-buttons-group-label"
-                defaultValue="female"
-                name="radio-buttons-group"
-              >
-                {item.categories.map((category) => (
-                  <Box className="flex items-center justify-between w-full group">
-                    <FormControlLabel
-                      sx={{ margin: 0 }}
-                      value={category.title}
-                      control={<Radio />}
-                      label={category.title}
-                    />
-                    <Typography
-                      sx={{
-                        fontSize: "1.25rem", // Increase font size for category count
-                        width: 24,
-                        height: 24,
-                      }}
-                      className="bg-highGreen/20 text-highGreen text-sm w-6 flex items-center justify-center ml-1 h-6 group-hover:text-mainWhite group-hover:bg-highGreen cursor-pointer transition-all duration-300"
-                    >
-                      {category.quantity}
-                    </Typography>
-                  </Box>
-                ))}
-              </RadioGroup>
+              {item.categories.map((category) => (
+                <Box className="flex items-center justify-between w-full group">
+                  <FormControlLabel
+                    sx={{ margin: 0 }}
+                    value={category.title}
+                    control={<Checkbox {...label} color="success" />}
+                    label={category.title}
+                  />
+                  <Typography
+                    sx={{
+                      fontSize: "1.25rem", // Increase font size for category count
+                      width: 24,
+                      height: 24,
+                    }}
+                    className="bg-highGreen/20 text-highGreen text-sm w-6 flex items-center justify-center ml-1 h-6 group-hover:text-mainWhite group-hover:bg-highGreen cursor-pointer transition-all duration-300"
+                  >
+                    {category.quantity}
+                  </Typography>
+                </Box>
+              ))}
             </FormControl>
           </AccordionDetails>
         </Accordion>

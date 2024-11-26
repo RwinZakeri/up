@@ -5,7 +5,7 @@ import { Box } from "@mui/material";
 
 const SkillOverViewCardContainer = () => {
   return (
-    <Box className="py-4 flex flex-wrap mx-auto gap-6 max-w-[1440px] items-center justify-center ">
+    <Box className="py-4 flex flex-wrap mx-auto gap-6 standardContainer items-center justify-center ">
       <SkillOverViewCard icon={LayersIcon} />
       <SkillOverViewCard icon={LayersIcon} />
       <SkillOverViewCard icon={LayersIcon} />

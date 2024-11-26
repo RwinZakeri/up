@@ -1,9 +1,10 @@
 import AnimateLine from "@/modules/animateLine/animateLine";
+import SocialShare from "@/modules/social-share/socialShare";
 import { Box } from "@mui/material";
 
 const JobReview = () => {
   return (
-    <Box className="shadow-none rounded-xl p-4 shadow-slate-400 boxShadowJob mt-[30px]">
+    <Box className=" rounded-xl p-4  boxShadowJob mt-[30px] ">
       <Box>
         <h2 className="text-[22px]">بررسی اجمالی محصول</h2>
       </Box>
@@ -39,9 +40,9 @@ const JobReview = () => {
           تاریخ:
           <span className="float-left text-[#696969]">1400.02.29 </span>
         </li>
-        <li className="">
+        <li className="flex items-center justify-between">
           اشتراک گذاری پست:
-          <span className="float-left text-[#696969]">1400.02.29 </span>
+          <SocialShare />
         </li>
       </ul>
     </Box>
