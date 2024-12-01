@@ -20,7 +20,12 @@ import {
 } from "@mui/material";
 import ListItem from "@mui/material/ListItem";
 import Image from "next/image";
-const BlogDetail = () => {
+const BlogDetail = ({
+  params: { slug: string },
+}: {
+  params: { slug: string };
+}) => {
+
   const innerTitleInfo: InnerTitleInfo = {
     title: "جزئیات وبلاگ",
     mainRouteTitle: "خانه",

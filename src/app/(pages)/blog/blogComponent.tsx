@@ -1,10 +1,17 @@
 import InnerTitle from "@/app/components/jobs/index/innerTitle/innterTitle";
+import useData from "@/hooks/useData";
 import AnimateLine from "@/modules/animateLine/animateLine";
+import BlogSkeleton from "@/modules/blog-skeleton/blogSkeleton";
 import BlogCard from "@/modules/blogCard/blogCard";
-import type { InnerTitleInfo } from "@/types/type";
+import type { BlogPost, InnerTitleInfo } from "@/types/type";
 import { Box, Typography } from "@mui/material";
 
-const BlogComponent = () => {
+const BlogComponent = async () => {
+  const data: BlogPost[] = await useData(
+    "http://upresearch.ir:81/api/Blog/GetAllPosts"
+  );
+  console.log(data);
+  console.log("object");
   const innerTitleInfo: InnerTitleInfo = {
     title: "وبلاگ شبکه ای",
     mainRouteTitle: "خانه",
@@ -12,6 +19,7 @@ const BlogComponent = () => {
     current: "وبلاگ شبکه ای",
     currentAddress: "/blog",
   };
+
   return (
     <>
       <InnerTitle innerTitleInfo={innerTitleInfo} />
@@ -31,12 +39,15 @@ const BlogComponent = () => {
 
         {/* card container */}
         <Box className="px-8 md:px-0 mx-auto flex-col md:flex-row pt-10 flex items-center gap-10 flex-wrap justify-center">
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
+          {!data.length ? (
+            <BlogSkeleton />
+          ) : (
+            <>
+              {data?.map((blogData: BlogPost) => (
+                <BlogCard key={blogData?.id} {...blogData} />
+              ))}
+            </>
+          )}
         </Box>
       </Box>
     </>
