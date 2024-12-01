@@ -11,7 +11,7 @@ import FileUpload from "@/modules/fileUpload/fileUpload";
 const Footer = () => {
   return (
     <footer className="relative bg-lightGreenXXXs px-4 pt-24 pb-20">
-      <FileUpload/>
+      {/* <FileUpload/> */}
       <Box className="standardContainer pt-24">
         <Box className="flex justify-between">
           <Box>
