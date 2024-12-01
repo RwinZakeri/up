@@ -149,7 +149,9 @@
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: ease;
-  margin-top: 3rem;
+  margin-top: 6rem;
+  position: relative;
+  top: 2rem;
   /* position: ab; */
 }
 

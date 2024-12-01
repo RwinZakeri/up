@@ -7,11 +7,11 @@ import Image from "next/image";
 const RecentSentJobCard = () => {
   return (
     <Box className="w-full h-full py-6 rounded-md bg-mainWhite p-4">
-      <Box className="flex text-start items-start justify-between font-medium text-base gap-2">
-        <Box className="w-20">
+      <Box className="flex text-start items-center justify-between font-medium text-base">
+        <Box className="">
           <Image
             src={myImg}
-            className=" rounded-full w-6"
+            className=" rounded-full w-16"
             width={100}
             height={100}
             alt="img"

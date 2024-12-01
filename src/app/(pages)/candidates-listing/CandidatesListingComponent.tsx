@@ -1,6 +1,7 @@
+import CandidatesBox from "@/app/components/candidates-listing/candidatesBoxes";
 import InnerTitle from "@/app/components/jobs/index/innerTitle/innterTitle";
 import type { InnerTitleInfo } from "@/types/type";
-import { Box, Rating } from "@mui/material";
+import { Box } from "@mui/material";
 
 const CandidatesListingComponent = () => {
   const innerTitleInfo: InnerTitleInfo = {
@@ -14,8 +15,7 @@ const CandidatesListingComponent = () => {
   return (
     <Box>
       <InnerTitle innerTitleInfo={innerTitleInfo} />
-
-      <Rating name="read-only" value={1} readOnly />
+      <CandidatesBox />
     </Box>
   );
 };
