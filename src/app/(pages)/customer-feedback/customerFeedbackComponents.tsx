@@ -17,7 +17,7 @@ const CustomerFeedbackComponents = () => {
   return (
     <Box>
       <InnerTitle innerTitleInfo={innerTitleInfo} />
-      <Box className="w-1/2 mx-auto py-[70px]">
+      <Box className="md:w-1/2 mx-auto px-[20px] py-[70px]">
         <AnimateTitle
           title=" نظرات کاربران ما"
           description="ما نظرات کاربران خود را جمع‌آوری می‌کنیم تا بتوانید نظر صادقانه‌ای در مورد اینکه تجربه با وب‌سایت ما واقعاً چگونه است، دریافت کنید!"
