@@ -17,7 +17,7 @@ const BannerArea = async () => {
     await fetcherData();
 
   return (
-    <Box className="pt-28  px-3 lg:pt-72  standardContainer relative">
+    <Box className="pt-28  px-3 lg:py-44   standardContainer relative">
       <Typography
         variant="h1"
         className="lg:max-w-[50%] font-medium lg:text-5xl xl:text-6xl xl:leading-[72px]"
