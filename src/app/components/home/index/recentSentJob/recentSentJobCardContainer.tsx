@@ -10,7 +10,7 @@ import "../../../../globals.css";
 
 const RecentSentJobCardContainer = () => {
   return (
-    <Box className="w-full max-w-[1280px] mx-auto my-8">
+    <Box className="w-full  standardContainer  mx-auto my-8">
       <Box>
         <Swiper
           pagination={{

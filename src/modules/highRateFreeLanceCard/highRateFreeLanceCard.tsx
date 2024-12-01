@@ -15,7 +15,7 @@ const HighRateFreeLanceCard = ({
   const blueStars = totalStars - goldStars; // Remaining stars are blue
 
   return (
-    <Box className="flex flex-col items-center justify-center gap-3 shadow-xl w-full md:w-fit p-6 lg:p-3 xl:p-10 rounded-xl">
+    <Box className="flex flex-col hover:-translate-y-4 transition-all duration-500 items-center justify-center gap-3 boxShadowJob w-full md:w-[48.5%] mt-4  py-6 md:px-2 lg:px-6 lg:p-3 xl:p-7 rounded-xl">
       <Image
         src={imgAddress}
         alt="freelance"
@@ -30,25 +30,19 @@ const HighRateFreeLanceCard = ({
       <Box>
         <Rating name="read-only" value={1} readOnly />
       </Box>
-      <Box className="flex flex-col md:flex-row items-center justify-between px-12  md:px-0 md:gap-8  w-full">
-        <Box>
+      <Box className="flex flex-col md:flex-row items-center justify-between  md:px-0 lg:gap-8  w-full">
+        <Box className="mb-2 md:mb-0 text-base  md:text-sm font-semibold text-black">
           <Typography sx={{ display: "flex", color: "gray" }}>
             موفقیت شغلی :{" "}
-            <Typography
-              variant="caption"
-              className="text-base font-semibold text-black"
-            >
+            <Typography variant="caption" className="text-black text-base">
               {jobPosition}%
             </Typography>
           </Typography>
         </Box>
-        <Box>
+        <Box className="text-base md:text-sm font-semibold text-black">
           <Typography sx={{ display: "flex", color: "gray" }}>
             امتیاز :{" "}
-            <Typography
-              variant="caption"
-              className="text-base font-semibold text-black"
-            >
+            <Typography variant="caption" className="text-black text-base">
               {rateMoney} تومان در ماه
             </Typography>
           </Typography>

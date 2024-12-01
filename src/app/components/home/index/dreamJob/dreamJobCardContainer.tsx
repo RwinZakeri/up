@@ -4,7 +4,7 @@ import { Box } from "@mui/material";
 
 const DreamJobCardContainer = () => {
   return (
-    <Box className="mt-12 max-w-[1440px] mx-auto px-4">
+    <Box className="mt-12 standardContainer mx-auto px-4">
       <Box sx={{ display: "flex", gap: 4, flexDirection: "column" }}>
         <DreamJobCard />
         <DreamJobCard />

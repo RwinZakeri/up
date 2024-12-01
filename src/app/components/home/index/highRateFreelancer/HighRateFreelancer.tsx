@@ -39,6 +39,8 @@ const HighRateFreelancer = () => {
         </Box>
         {/* card container */}
         <HighRateFreeLanceCardContainer />
+        <HighRateFreeLanceCardContainer />
+        <HighRateFreeLanceCardContainer />
       </Box>
     </Box>
   );

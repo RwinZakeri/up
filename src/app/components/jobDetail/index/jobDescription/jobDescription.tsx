@@ -1,4 +1,5 @@
 import AnimateLine from "@/modules/animateLine/animateLine";
+import SocialShare from "@/modules/social-share/socialShare";
 import CircleIcon from "@mui/icons-material/Circle";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -192,50 +193,7 @@ const JobDescription = () => {
         <Typography className="text-lg font-medium ">
           اشتراک گذاری پست :
         </Typography>
-        <List className="flex gap-2">
-          <ListItem
-            sx={{ padding: 0, margin: 0, display: "flex", width: "auto" }}
-          >
-            <Button
-              sx={{ padding: 0, minWidth: "auto" }}
-              className="rounded-full"
-            >
-              <Box className="bg-mainWhite group hover:bg-highGreen transition-all duration-300 w-9 h-9 flex items-center justify-center rounded-full">
-                <Link href={""} passHref>
-                  <InstagramIcon className="text-2xl transition-all duration-300 group-hover:text-mainWhite text-gray-500" />
-                </Link>
-              </Box>
-            </Button>
-          </ListItem>
-          <ListItem
-            sx={{ padding: 0, margin: 0, display: "flex", width: "auto" }}
-          >
-            <Button
-              sx={{ padding: 0, minWidth: "auto" }}
-              className="rounded-full"
-            >
-              <Box className="bg-mainWhite group hover:bg-highGreen transition-all duration-300 w-9 h-9 flex items-center justify-center rounded-full">
-                <Link href={"/"} passHref>
-                  <FacebookIcon className="text-2xl transition-all duration-300 group-hover:text-mainWhite text-gray-500" />
-                </Link>
-              </Box>
-            </Button>
-          </ListItem>
-          <ListItem
-            sx={{ padding: 0, margin: 0, display: "flex", width: "auto" }}
-          >
-            <Button
-              sx={{ padding: 0, minWidth: "auto" }}
-              className="rounded-full"
-            >
-              <Box className="bg-mainWhite group hover:bg-highGreen transition-all duration-300 w-9 h-9 flex items-center justify-center rounded-full">
-                <Link href={"/"} passHref>
-                  <TwitterIcon className="text-2xl transition-all duration-300 group-hover:text-mainWhite text-gray-500" />
-                </Link>
-              </Box>
-            </Button>
-          </ListItem>
-        </List>
+        <SocialShare/>
       </Box>
     </Box>
   );

@@ -157,8 +157,19 @@
       "rate": 5,
       "jobPosition": "90",
       "rateMoney": "30"
+    },
+    {
+      "id": 4,
+      "title": "ژاکلین فازندا",
+      "description": "توسعه دهنده شبکه",
+
+      "imgAddress": "/images/freelancers/freelancers-img3.jpg",
+      "rate": 5,
+      "jobPosition": "90",
+      "rateMoney": "30"
     }
   ],
+
   "jobCategory": [
     {
       "id": 1,
@@ -235,6 +246,80 @@
     {
       "id": 2,
       "title": "سطح تجربه",
+      "categories": [
+        {
+          "id": 129,
+          "title": "مبتدی",
+          "quantity": 33
+        },
+        {
+          "id": 130,
+          "title": "متوسط",
+          "quantity": 58
+        },
+        {
+          "id": 131,
+          "title": "پیشرفته",
+          "quantity": 76
+        },
+        {
+          "id": 132,
+          "title": "کارشناس",
+          "quantity": 42
+        },
+        {
+          "id": 133,
+          "title": "مدیر",
+          "quantity": 91
+        },
+        {
+          "id": 134,
+          "title": "ارشد",
+          "quantity": 64
+        }
+      ]
+    }
+  ],
+  "candidatesListing": [
+    {
+      "id": 1,
+      "title": "تخصص",
+      "categories": [
+        {
+          "id": 123,
+          "title": "مشاغل تمام وقت",
+          "quantity": 10
+        },
+        {
+          "id": 124,
+          "title": "مشاغل پاره وقت",
+          "quantity": 45
+        },
+        {
+          "id": 125,
+          "title": "مشاغل از راه دور",
+          "quantity": 67
+        },
+        {
+          "id": 126,
+          "title": "مشاغل از راه دور",
+          "quantity": 53
+        },
+        {
+          "id": 127,
+          "title": "کارآموزی",
+          "quantity": 29
+        },
+        {
+          "id": 128,
+          "title": "قرارداد",
+          "quantity": 82
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "آموزش",
       "categories": [
         {
           "id": 129,

@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const InnerTitle = ({ innerTitleInfo }: { innerTitleInfo: InnerTitleInfo }) => {
   return (
-    <Box className="py-44 bg-lightGreenXXXXs text-center">
+    <Box className="pt-44 pb-16 bg-lightGreenXXXXs text-center">
       <Typography variant="h1" className="text-5xl font-medium">
         {innerTitleInfo.title}
       </Typography>
