@@ -7,18 +7,18 @@ import type { BlogPost, InnerTitleInfo } from "@/types/type";
 import { Box, Typography } from "@mui/material";
 
 const BlogComponent = async () => {
-  const data: BlogPost[] = await useData(
-    "http://upresearch.ir:81/api/Blog/GetAllPosts"
-  );
-  console.log(data);
-  console.log("object");
+
+  const apiUrl = process.env.REACT_APP_API_URL;
+
+  const data: BlogPost[] = await useData(`${apiUrl}/api/Blog/GetAllPosts`);
   const innerTitleInfo: InnerTitleInfo = {
     title: "وبلاگ شبکه ای",
     mainRouteTitle: "خانه",
     mainRouteAddress: "/",
     current: "وبلاگ شبکه ای",
     currentAddress: "/blog",
-  };
+  }; 
+  
 
   return (
     <>

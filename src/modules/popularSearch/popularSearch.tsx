@@ -1,11 +1,11 @@
-import { popularSearch } from "@/types/type";
+import type { PopularSearch } from "@/types/type";
 import { Box, Typography } from "@mui/material";
 import Link from "next/link";
 
 const PopularSearch = ({
   popularSearch,
 }: {
-  popularSearch: popularSearch[];
+  popularSearch: PopularSearch[];
 }) => {
   return (
     <Box sx={{ display: "flex", gap: 1, alignItems: "center" }}>

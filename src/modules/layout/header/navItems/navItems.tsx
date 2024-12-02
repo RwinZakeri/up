@@ -1,6 +1,6 @@
 "use client";
 import db from "@/db/db.json";
-import type { headerItemType } from "@/types/type";
+import type { HeaderItemType } from "@/types/type";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { Box, List, ListItem, Typography } from "@mui/material";
 import Link from "next/link";
@@ -18,7 +18,7 @@ const NavItems = () => {
           padding: "0px",
         }}
       >
-        {headerItems.map((item: headerItemType) => (
+        {headerItems.map((item: HeaderItemType) => (
           <ListItem
             className="w-fit px-2 cursor-pointer relative"
             key={item.id}

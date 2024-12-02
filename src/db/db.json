@@ -80,17 +80,13 @@
         {
           "id": 1,
           "title": "وبلاگ شبکه ای ",
-          "linkAddress": "/blog/recent"
+          "linkAddress": "blog"
         },
-        {
-          "id": 2,
-          "title": "وبلاگ سایدبار-1",
-          "linkAddress": "/blog/categories"
-        },
+
         {
           "id": 3,
           "title": "جزئیات وبلاگ",
-          "linkAddress": "/blog/categories"
+          "linkAddress": "blog/1"
         }
       ]
     },

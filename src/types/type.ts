@@ -4,11 +4,11 @@ export interface HeaderItemType {
   id: number;
   title: string;
   linkAddress: string;
-  subMenuHeader?: {
+  subMenuHeader?: Array<{
     id: number;
     title: string;
     linkAddress: string;
-  }[];
+  }>;
 }
 
 export interface PopularSearch {

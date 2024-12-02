@@ -1,5 +1,5 @@
-import db from "@/db/db.json";
-import type { headerItemType } from "@/types/type";
+import { useEffect, useState } from "react";
+import type { HeaderItemType } from "@/types/type";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import PersonIcon from "@mui/icons-material/Person";
@@ -14,7 +14,15 @@ import ListItemButton from "@mui/material/ListItemButton";
 import Typography from "@mui/material/Typography";
 
 const DrawerBox = () => {
-  const { headerItems } = db;
+  const [headerItems, setHeaderItems] = useState<HeaderItemType[]>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await import("@/db/db.json");
+      setHeaderItems(data.headerItems);
+    };
+    fetchData();
+  }, []);
 
   return (
     <Box sx={{ width: 330 }} role="presentation">
@@ -36,8 +44,8 @@ const DrawerBox = () => {
           </Button>
         </ListItem>
 
-        {headerItems?.map((item: headerItemType) => (
-          <ListItem sx={{ padding: 0 }} key={item.title}>
+        {headerItems?.map((item: HeaderItemType) => (
+          <ListItem sx={{ padding: 0 }} key={item.id}>
             {!!item.subMenuHeader?.length ? (
               <Accordion className="w-full rounded-none">
                 <AccordionSummary
@@ -45,20 +53,20 @@ const DrawerBox = () => {
                   aria-controls="panel1-content"
                   id="panel1-header"
                 >
-                  <Typography>{item?.title}</Typography>
+                  <Typography>{item.title}</Typography>
                 </AccordionSummary>
                 <AccordionDetails sx={{ padding: 0, boxShadow: "none" }}>
                   <List sx={{ padding: 0, border: 0 }}>
-                    {item?.subMenuHeader.map((subMenu) => (
-                      <ListItem key={subMenu.title}>
-                        <ListItemButton>{subMenu?.title}</ListItemButton>
+                    {item.subMenuHeader.map((subMenu) => (
+                      <ListItem key={subMenu.id}>
+                        <ListItemButton>{subMenu.title}</ListItemButton>
                       </ListItem>
                     ))}
                   </List>
                 </AccordionDetails>
               </Accordion>
             ) : (
-              <ListItemButton>{item?.title}</ListItemButton>
+              <ListItemButton>{item.title}</ListItemButton>
             )}
           </ListItem>
         ))}
