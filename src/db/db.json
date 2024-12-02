@@ -30,68 +30,124 @@
     },
     {
       "id": 3,
-      "title": "کارفرما",
-      "linkAddress": "services",
+      "title": "کارفرمایان",
+      "linkAddress": "",
       "subMenuHeader": [
         {
           "id": 1,
-          "title": "مشاوره",
-          "linkAddress": "/services/consulting"
+          "title": "لیست کارفرمایان",
+          "linkAddress": "employers-listing"
         },
         {
           "id": 2,
-          "title": "پشتیبانی",
-          "linkAddress": "/services/support"
+          "title": "جزئیات کارفرمایان",
+          "linkAddress": "employerDetail"
         },
         {
           "id": 3,
-          "title": "آموزش",
-          "linkAddress": "/services/training"
+          "title": "داشبورد کارفرمایان",
+          "linkAddress": "admin/dashboard"
         }
       ]
     },
     {
       "id": 4,
-      "title": "تماس با ما",
-      "linkAddress": "contact",
-      "subMenuHeader": []
-    },
-    {
-      "id": 5,
-      "title": "کار",
-      "linkAddress": "job",
+      "title": "داوطلبان ",
+      "linkAddress": "",
       "subMenuHeader": [
         {
           "id": 1,
-          "title": "مقالات اخیر",
+          "title": "فهرست داوطلبان ",
+          "linkAddress": "candidates-listing"
+        },
+        {
+          "id": 2,
+          "title": " جزئیات داوطلبان  ",
+          "linkAddress": "employerDetail"
+        },
+        {
+          "id": 3,
+          "title": "داشبورد داوطلبان",
+          "linkAddress": "admin/dashboard"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "وبلاگ",
+      "linkAddress": "",
+      "subMenuHeader": [
+        {
+          "id": 1,
+          "title": "وبلاگ شبکه ای ",
           "linkAddress": "/blog/recent"
         },
         {
           "id": 2,
-          "title": "دسته‌بندی‌ها",
+          "title": "وبلاگ سایدبار-1",
+          "linkAddress": "/blog/categories"
+        },
+        {
+          "id": 3,
+          "title": "جزئیات وبلاگ",
           "linkAddress": "/blog/categories"
         }
       ]
     },
     {
       "id": 6,
-      "title": "محصولات",
-      "linkAddress": "/products",
+      "title": "صفحات",
+      "linkAddress": "",
       "subMenuHeader": [
         {
           "id": 1,
-          "title": "محصولات جدید",
-          "linkAddress": "/products/new"
+          "title": "درباره ما",
+          "linkAddress": "about"
         },
         {
           "id": 2,
-          "title": "پرفروش‌ترین‌ها",
-          "linkAddress": "/products/bestsellers"
+          "title": "درباره ما",
+          "linkAddress": "contactUs"
         },
         {
           "id": 3,
-          "title": "تخفیف‌ها",
+          "title": "بازخورد مشتریان",
+          "linkAddress": "customerFeedback"
+        },
+        {
+          "id": 4,
+          "title": "فریلنسر",
+          "linkAddress": "freelancer"
+        },
+        {
+          "id": 5,
+          "title": "پلن قیمت گذاری",
+          "linkAddress": "pricingArea"
+        },
+        {
+          "id": 6,
+          "title": "سوالات متداول",
+          "linkAddress": "frequentlyAskedQuestions"
+        },
+        {
+          "id": 7,
+          "title": "ورود / ثبت نام",
           "linkAddress": "/products/discounts"
+        },
+        {
+          "id": 8,
+          "title": "قوانین و ظوابط",
+          "linkAddress": "rules"
+        },
+        {
+          "id": 9,
+          "title": "حریم خصوصی",
+          "linkAddress": "privacy"
+        },
+        {
+          "id": 10,
+          "title": "صفحه ی 404",
+          "linkAddress": "notFound"
         }
       ]
     }
