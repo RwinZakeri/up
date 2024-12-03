@@ -1,5 +1,5 @@
 import Layout from "@/app/components/layout/index/layout";
-import { StyledEngineProvider } from "@mui/material";
+import Rtl from "../../theme/Rtl";
 import "./globals.css";
 
 export default function RootLayout({
@@ -12,11 +12,13 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body>
-        <StyledEngineProvider injectFirst>
+      <Rtl>
+        <body>
+          {/* <StyledEngineProvider injectFirst> */}
           <Layout>{children}</Layout>
-        </StyledEngineProvider>
-      </body>
+          {/* </StyledEngineProvider> */}
+        </body>
+      </Rtl>
     </html>
   );
 }

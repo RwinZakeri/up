@@ -36,6 +36,7 @@ const Header = () => {
       }`}
     >
       <Box
+
         className="w-full xl:w-11/12 mx-auto"
         sx={{
           width: "100%",
