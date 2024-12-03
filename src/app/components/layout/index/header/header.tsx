@@ -6,6 +6,7 @@ import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import PersonIcon from "@mui/icons-material/Person";
 import { Box, Button } from "@mui/material";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const Header = () => {
@@ -35,7 +36,8 @@ const Header = () => {
       }`}
     >
       <Box
-        className=""
+
+        className="w-full xl:w-11/12 mx-auto"
         sx={{
           width: "100%",
           display: "flex",
@@ -46,7 +48,9 @@ const Header = () => {
         }}
       >
         <Box sx={{ display: "flex", alignItems: "center", gap: "40px" }}>
-          <Image src={Logo} alt="zoben" width={143} height={53} />
+          <Link href={"/"}>
+            <Image src={Logo} alt="zoben" width={143} height={53} />
+          </Link>
           <NavItems />
         </Box>
 

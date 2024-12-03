@@ -1,23 +1,14 @@
 import BannerFrom from "@/modules/form/bannerFrom";
-import PopularSearch from "@/modules/popularSearch/popularSearch";
-import type { popularSearch } from "@/types/type";
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 // images
 import WomanShout from "@/assets/images/home-one/home-one-img.png";
 import UsersProfile from "@/modules/usersProfile/usersProfile";
 // fetcher
-export async function fetcherData() {
-  const res = await fetch("http://localhost:3000/api", { cache: "no-store" });
-  const data = await res.json();
-  return data;
-}
-const BannerArea = async () => {
-  const { popularSearch }: { popularSearch: popularSearch[] } =
-    await fetcherData();
 
+const BannerArea = async () => {
   return (
-    <Box className="pt-28  px-3 lg:pt-72  standardContainer relative">
+    <Box className="pt-28  px-3 lg:py-44   standardContainer relative">
       <Typography
         variant="h1"
         className="lg:max-w-[50%] font-medium lg:text-5xl xl:text-6xl xl:leading-[72px]"
@@ -39,7 +30,7 @@ const BannerArea = async () => {
       <Box className="w-full  lg:w-3/5">
         <BannerFrom />
       </Box>
-      <PopularSearch popularSearch={popularSearch} />
+      {/* <PopularSearch popularSearch={popularSearch} /> */}
       <UsersProfile />
       <Box
         className="lg:pt-36"

@@ -30,7 +30,7 @@ import plantAtOfficeImage from "@/assets/images/career/career-img1.jpg";
 // Types
 import type { InnerTitleInfo } from "@/types/type";
 
-const EmployersListingComponent = () => {
+const   EmployersListingComponent = () => {
   const innerTitleInfo: InnerTitleInfo = {
     title: "لیست کارفرمایان",
     mainRouteTitle: "خانه",

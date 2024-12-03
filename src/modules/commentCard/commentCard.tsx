@@ -10,7 +10,7 @@ const CommentCard = ({ comment }: CommentCardProps) => {
   const { title, description, profileAddress } = comment;
 
   return (
-    <Box className="w-full flex items-center justify-center flex-col gap-2 bg-transparent py-4 bg-[#f5fbf6]">
+    <Box className="w-full flex standardContainer items-center justify-center flex-col gap-2 bg-transparent py-4 bg-[#f5fbf6]">
       <Typography className="font-medium text-lg">{title}</Typography>
       <Image
         src={profileAddress} // Absolute path with leading "/"

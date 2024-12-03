@@ -22,7 +22,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
         theme="light"
         transition={Bounce}
       />
-      <Footer/>
+      {/* <Footer/> */}
     </>
   );
 };

@@ -7,7 +7,7 @@ import JobListStatus from "../joblistStatus/jobListStatus";
 import JobsCardContainer from "../jobsCardContainer/jobsCardContainer";
 const JobListingArea = () => {
   return (
-    <Box className="mx-auto max-w-[1290px]">
+    <Box className="mx-auto standardContainer">
       <Box className="w-full md:w-5/6 lg:w-full mx-auto bg-grayXlight rounded-xl">
         <BannerForm />
       </Box>

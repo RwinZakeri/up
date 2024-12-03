@@ -1,20 +1,21 @@
-export interface headerItemType {
+// Existing interfaces
+
+export interface HeaderItemType {
   id: number;
   title: string;
   linkAddress: string;
-  subMenuHeader?: {
+  subMenuHeader?: Array<{
     id: number;
     title: string;
     linkAddress: string;
-  }[];
+  }>;
 }
 
-export interface popularSearch {
+export interface PopularSearch {
   id: number;
   title: string;
   linkAddress: string;
 }
-[];
 
 export interface CommentSliderItem {
   id: number;
@@ -40,3 +41,44 @@ export interface InnerTitleInfo {
   current: string;
   currentAddress: string;
 }
+
+// Blog Post Interfaces and Types
+
+export interface BlogPost {
+  id: number;
+  title: string;
+  content: string;
+  publishedDate: string;
+  slug: string;
+  userId: number;
+  postPictureUrl: string;
+  postCategoryId: number;
+}
+
+type Category = {
+  id: number;
+  categoryName: string;
+  categoryDescription: string;
+};
+
+type Author = {
+  id: number;
+  username: string;
+  profilePictureUrl: string | null;
+};
+
+type Comment = {
+  // Define the structure of comments if there are any fields
+};
+
+type BlogPostDetail = {
+  id: number;
+  title: string;
+  content: string;
+  slug: string;
+  postPictureUrl: string;
+  publishedDate: string;
+  category: Category;
+  author: Author;
+  comments: Comment[];
+};

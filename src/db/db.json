@@ -3,90 +3,147 @@
     {
       "id": 1,
       "title": "خانه",
-      "linkAddress": "/"
+      "linkAddress": " "
     },
 
     {
       "id": 2,
-      "title": "درباره ما",
-      "linkAddress": "/about",
+      "title": "شغل",
+      "linkAddress": "",
       "subMenuHeader": [
         {
           "id": 1,
-          "title": "تیم ما",
-          "linkAddress": "/about/team"
+          "title": "فهرست مشاغل",
+          "linkAddress": "jobs"
         },
         {
           "id": 2,
-          "title": "مأموریت و اهداف",
-          "linkAddress": "/about/mission"
+          "title": "جزِِِِیات مشاغل",
+          "linkAddress": "jobDetail"
+        },
+        {
+          "id": 3,
+          "title": "ارسال اگهی",
+          "linkAddress": "admin/dashboard/addJob"
         }
       ]
     },
     {
       "id": 3,
-      "title": "خدمات",
-      "linkAddress": "/services",
+      "title": "کارفرمایان",
+      "linkAddress": "",
       "subMenuHeader": [
         {
           "id": 1,
-          "title": "مشاوره",
-          "linkAddress": "/services/consulting"
+          "title": "لیست کارفرمایان",
+          "linkAddress": "employers-listing"
         },
         {
           "id": 2,
-          "title": "پشتیبانی",
-          "linkAddress": "/services/support"
+          "title": "جزئیات کارفرمایان",
+          "linkAddress": "employerDetail"
         },
         {
           "id": 3,
-          "title": "آموزش",
-          "linkAddress": "/services/training"
+          "title": "داشبورد کارفرمایان",
+          "linkAddress": "admin/dashboard"
         }
       ]
     },
     {
       "id": 4,
-      "title": "تماس با ما",
-      "linkAddress": "/contact",
-      "subMenuHeader": []
+      "title": "داوطلبان ",
+      "linkAddress": "",
+      "subMenuHeader": [
+        {
+          "id": 1,
+          "title": "فهرست داوطلبان ",
+          "linkAddress": "candidates-listing"
+        },
+        {
+          "id": 2,
+          "title": " جزئیات داوطلبان  ",
+          "linkAddress": "employerDetail"
+        },
+        {
+          "id": 3,
+          "title": "داشبورد داوطلبان",
+          "linkAddress": "admin/dashboard"
+        }
+      ]
     },
     {
       "id": 5,
       "title": "وبلاگ",
-      "linkAddress": "/blog",
+      "linkAddress": "",
       "subMenuHeader": [
         {
           "id": 1,
-          "title": "مقالات اخیر",
-          "linkAddress": "/blog/recent"
+          "title": "وبلاگ شبکه ای ",
+          "linkAddress": "blog"
         },
+
         {
-          "id": 2,
-          "title": "دسته‌بندی‌ها",
-          "linkAddress": "/blog/categories"
+          "id": 3,
+          "title": "جزئیات وبلاگ",
+          "linkAddress": "blog/1"
         }
       ]
     },
     {
       "id": 6,
-      "title": "محصولات",
-      "linkAddress": "/products",
+      "title": "صفحات",
+      "linkAddress": "",
       "subMenuHeader": [
         {
           "id": 1,
-          "title": "محصولات جدید",
-          "linkAddress": "/products/new"
+          "title": "درباره ما",
+          "linkAddress": "about"
         },
         {
           "id": 2,
-          "title": "پرفروش‌ترین‌ها",
-          "linkAddress": "/products/bestsellers"
+          "title": "تماس با ما",
+          "linkAddress": "contactUs"
         },
         {
           "id": 3,
-          "title": "تخفیف‌ها",
+          "title": "بازخورد مشتریان",
+          "linkAddress": "customerFeedback"
+        },
+        {
+          "id": 4,
+          "title": "فریلنسر",
+          "linkAddress": "freelancer"
+        },
+        {
+          "id": 5,
+          "title": "پلن قیمت گذاری",
+          "linkAddress": "pricingArea"
+        },
+        {
+          "id": 6,
+          "title": "سوالات متداول",
+          "linkAddress": "frequentlyAskedQuestions"
+        },
+        {
+          "id": 7,
+          "title": "ورود / ثبت نام",
           "linkAddress": "/products/discounts"
+        },
+        {
+          "id": 8,
+          "title": "قوانین و ظوابط",
+          "linkAddress": "rules"
+        },
+        {
+          "id": 9,
+          "title": "حریم خصوصی",
+          "linkAddress": "privacy"
+        },
+        {
+          "id": 10,
+          "title": "صفحه ی 404",
+          "linkAddress": "notFound"
         }
       ]
     }
@@ -157,8 +214,19 @@
       "rate": 5,
       "jobPosition": "90",
       "rateMoney": "30"
+    },
+    {
+      "id": 4,
+      "title": "ژاکلین فازندا",
+      "description": "توسعه دهنده شبکه",
+
+      "imgAddress": "/images/freelancers/freelancers-img3.jpg",
+      "rate": 5,
+      "jobPosition": "90",
+      "rateMoney": "30"
     }
   ],
+
   "jobCategory": [
     {
       "id": 1,
@@ -235,6 +303,80 @@
     {
       "id": 2,
       "title": "سطح تجربه",
+      "categories": [
+        {
+          "id": 129,
+          "title": "مبتدی",
+          "quantity": 33
+        },
+        {
+          "id": 130,
+          "title": "متوسط",
+          "quantity": 58
+        },
+        {
+          "id": 131,
+          "title": "پیشرفته",
+          "quantity": 76
+        },
+        {
+          "id": 132,
+          "title": "کارشناس",
+          "quantity": 42
+        },
+        {
+          "id": 133,
+          "title": "مدیر",
+          "quantity": 91
+        },
+        {
+          "id": 134,
+          "title": "ارشد",
+          "quantity": 64
+        }
+      ]
+    }
+  ],
+  "candidatesListing": [
+    {
+      "id": 1,
+      "title": "تخصص",
+      "categories": [
+        {
+          "id": 123,
+          "title": "مشاغل تمام وقت",
+          "quantity": 10
+        },
+        {
+          "id": 124,
+          "title": "مشاغل پاره وقت",
+          "quantity": 45
+        },
+        {
+          "id": 125,
+          "title": "مشاغل از راه دور",
+          "quantity": 67
+        },
+        {
+          "id": 126,
+          "title": "مشاغل از راه دور",
+          "quantity": 53
+        },
+        {
+          "id": 127,
+          "title": "کارآموزی",
+          "quantity": 29
+        },
+        {
+          "id": 128,
+          "title": "قرارداد",
+          "quantity": 82
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "آموزش",
       "categories": [
         {
           "id": 129,

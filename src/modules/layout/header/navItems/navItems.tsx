@@ -1,8 +1,9 @@
 "use client";
 import db from "@/db/db.json";
-import type { headerItemType } from "@/types/type";
+import type { HeaderItemType } from "@/types/type";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { Box, List, ListItem, Typography } from "@mui/material";
+import Link from "next/link";
 
 const NavItems = () => {
   const { headerItems } = db;
@@ -17,7 +18,7 @@ const NavItems = () => {
           padding: "0px",
         }}
       >
-        {headerItems.map((item: headerItemType) => (
+        {headerItems.map((item: HeaderItemType) => (
           <ListItem
             className="w-fit px-2 cursor-pointer relative"
             key={item.id}
@@ -42,7 +43,7 @@ const NavItems = () => {
               variant="body2"
               sx={{ cursor: "pointer", transition: "color 0.2s ease" }}
             >
-              {item?.title}
+              <Link href={`/${item?.linkAddress}`}>{item?.title}</Link>
             </Typography>
             {!!item?.subMenuHeader?.length && (
               <KeyboardArrowDownIcon
@@ -88,7 +89,9 @@ const NavItems = () => {
                         variant="body2"
                         sx={{ transition: "color 0.2s ease" }}
                       >
-                        {subMenu.title}
+                        <Link href={`/${subMenu?.linkAddress}`}>
+                          {subMenu.title}
+                        </Link>
                       </Typography>
                     </ListItem>
                   ))}
