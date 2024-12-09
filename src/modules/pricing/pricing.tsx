@@ -17,7 +17,7 @@ import Image from "next/image";
 
 const PricingTable = () => {
   return (
-    <Box className="standardContainer pt-24 pb-16 mb-40 overflow-x-scroll">
+    <Box className="standardContainer pt-24 pb-16 mb-40 overflow-x-scroll md:overflow-hidden">
       <Grid2
         container
         spacing={6}
@@ -204,7 +204,7 @@ const PricingTable = () => {
 
         {/* Pricing Content  */}
 
-        <Box className="pl-5">
+        <Box className="pl-5 px-4">
           <Typography variant="h4" gutterBottom>
             بهترین روش های <b className="text-lightGreen">قیمت گذاری</b>
           </Typography>
