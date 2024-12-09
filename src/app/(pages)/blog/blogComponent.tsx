@@ -1,5 +1,4 @@
 import InnerTitle from "@/app/components/jobs/index/innerTitle/innterTitle";
-import useData from "@/hooks/useData";
 import AnimateLine from "@/modules/animateLine/animateLine";
 import BlogSkeleton from "@/modules/blog-skeleton/blogSkeleton";
 import BlogCard from "@/modules/blogCard/blogCard";
@@ -7,18 +6,28 @@ import type { BlogPost, InnerTitleInfo } from "@/types/type";
 import { Box, Typography } from "@mui/material";
 
 const BlogComponent = async () => {
-
   const apiUrl = process.env.REACT_APP_API_URL;
 
-  const data: BlogPost[] = await useData(`${apiUrl}/api/Blog/GetAllPosts`);
+  // const data: BlogPost[] = await useData(`${apiUrl}/api/Blog/GetAllPosts`);
+  const data = [
+    {
+      id: 1,
+      title: "salam title",
+      content: "descriiiiiiiiiiption",
+      publishedDate: "2024-11-23T20:50:03.147374",
+      slug: "salam-title",
+      userId: 0,
+      postPictureUrl: "/images/blog/blog-details-img1.jpg",
+      postCategoryId: 0,
+    },
+  ];
   const innerTitleInfo: InnerTitleInfo = {
     title: "وبلاگ شبکه ای",
     mainRouteTitle: "خانه",
     mainRouteAddress: "/",
     current: "وبلاگ شبکه ای",
     currentAddress: "/blog",
-  }; 
-  
+  };
 
   return (
     <>

@@ -10,3 +10,4 @@ const useData = async (url: string, options?: RequestInit): Promise<any> => {
 };
 
 export default useData;
+
