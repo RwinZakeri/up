@@ -1,19 +1,28 @@
-import Dash_lay from "@/app/components/dashboard/Dash_lay";
+// import Dash_lay from "@/app/components/dashboard/Dash_lay";
 
-const DashBoard = () => {
+// const DashBoard = () => {
+//   return (
+//     <>
+//       <Dash_lay />
+//     </>
+// import { Box } from "@mui/material";
+
+// const DashBoard = () => {
+//   return (
+//     <Box>
+//       <h1>hello world</h1>
+//     </Box>
+//   );
+// };
+
+// export default DashBoard;
+
+const Dashboard = () => {
   return (
-    <>
-      <Dash_lay />
-    </>
-import { Box } from "@mui/material";
-
-
-const DashBoard = () => {
-  return (
-    <Box>
-      <h1>hello world</h1>
-    </Box>
+    <div>
+      <h1>hello owrld</h1>
+    </div>
   );
 };
 
-export default DashBoard;
+export default Dashboard;
