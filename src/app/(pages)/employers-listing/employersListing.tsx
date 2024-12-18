@@ -5,9 +5,9 @@ import Image from "next/image";
 import { Box, Container, Typography } from "@mui/material";
 
 // Custom components
-import { default as EmployersListingCardContainer } from "@/app/components/employers-listing/employersListingCompanyCardContainer";
-import EmployersListingMasterCardContainer from "@/app/components/employers-listing/employersListingMasterCardContainer";
-import InnerTitle from "@/app/components/jobs/index/innerTitle/innterTitle";
+import { default as EmployersListingCardContainer } from "@/components/employers-listing/employersListingCompanyCardContainer";
+import EmployersListingMasterCardContainer from "@/components/employers-listing/employersListingMasterCardContainer";
+import InnerTitle from "@/components/jobs/index/innerTitle/innterTitle";
 
 // Modules
 import AnimateLine from "@/modules/animateLine/animateLine";
@@ -30,7 +30,7 @@ import plantAtOfficeImage from "@/assets/images/career/career-img1.jpg";
 // Types
 import type { InnerTitleInfo } from "@/types/type";
 
-const   EmployersListingComponent = () => {
+const EmployersListingComponent = () => {
   const innerTitleInfo: InnerTitleInfo = {
     title: "لیست کارفرمایان",
     mainRouteTitle: "خانه",

@@ -1,4 +1,4 @@
-import InnerTitle from "@/app/components/jobs/index/innerTitle/innterTitle";
+import InnerTitle from "@/components/jobs/index/innerTitle/innterTitle";
 import DetailComponents from "@/modules/DetailsComponent/detailsComponent";
 import DreamJobCard from "@/modules/dreamJobCard/dreamJobCard";
 import { InnerTitleInfo } from "@/types/type";

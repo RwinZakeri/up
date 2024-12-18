@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "../../../../globals.css";
+import "../../../../app/globals.css";
 
 const CommentsContainer = () => {
   const { commentSlider } = db;

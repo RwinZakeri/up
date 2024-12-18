@@ -1,5 +1,5 @@
-import InnerTitle from "@/app/components/jobs/index/innerTitle/innterTitle";
-import JobListingArea from "@/app/components/jobs/index/jobListingArea/jobListingArea";
+import InnerTitle from "@/components/jobs/index/innerTitle/innterTitle";
+import JobListingArea from "@/components/jobs/index/jobListingArea/jobListingArea";
 import type { InnerTitleInfo } from "@/types/type";
 import { Box } from "@mui/material";
 

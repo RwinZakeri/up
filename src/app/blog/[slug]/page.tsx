@@ -1,7 +1,7 @@
-import InnerTitle from "@/app/components/jobs/index/innerTitle/innterTitle";
 import prof2 from "@/assets/images/blog/blog-details-img1.jpg";
 import myImgg from "@/assets/images/blog/blog-details-img2.jpg";
 import prof from "@/assets/images/blog/blog-user.jpg";
+import InnerTitle from "@/components/jobs/index/innerTitle/innterTitle";
 import AnimateLine from "@/modules/animateLine/animateLine";
 import SocialShare from "@/modules/social-share/socialShare";
 import { InnerTitleInfo } from "@/types/type";
@@ -25,7 +25,6 @@ const BlogDetail = ({
 }: {
   params: { slug: string };
 }) => {
-
   const innerTitleInfo: InnerTitleInfo = {
     title: "جزئیات وبلاگ",
     mainRouteTitle: "خانه",

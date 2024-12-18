@@ -1,4 +1,4 @@
-import InnerTitle from "@/app/components/jobs/index/innerTitle/innterTitle";
+import InnerTitle from "@/components/jobs/index/innerTitle/innterTitle";
 import { InnerTitleInfo } from "@/types/type";
 import { Box, Button } from "@mui/material";
 
