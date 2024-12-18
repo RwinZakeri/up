@@ -4,13 +4,12 @@ import DreamJob from "@/app/components/home/index/dreamJob/dreamJob";
 import HighRateFreelancer from "@/app/components/home/index/highRateFreelancer/HighRateFreelancer";
 import RecentSentJob from "@/app/components/home/index/recentSentJob/recentSentJob";
 import SkillOverView from "@/app/components/home/index/skillOverView/skillOverView";
-import PricingTable from "@/modules/pricing/pricing";
 import { Box } from "@mui/material";
 
 const HomePage = () => {
   return (
     <Box className="">
-      <Box className="bg-lightGreen/10 ">
+      <Box className="bg-lightGreenLowOpacity">
         <BannerArea />
       </Box>
       <SkillOverView />
@@ -18,7 +17,7 @@ const HomePage = () => {
       <CommentsContainer />
       <HighRateFreelancer />
       <RecentSentJob />
-      <PricingTable />
+      {/* <PricingTable /> */}
     </Box>
   );
 };

@@ -11,6 +11,29 @@
   }
 }
 
+
+:root {
+  --light-green: #00CA99;
+  --light-green-light: #00ca973d;
+  --main-white: #ffffff;
+  --main-gray: #BDBDBD;
+  --light-green-xs: #D8F9ED;
+  --light-green-xxs: #e5faf5;
+  --light-green-xxxs: #f5fbf6;
+  --high-green: #59cb99;
+  --light-gray: #f2f2f2;
+  --light-red: #fdefed;
+  --light-orange: #f26e8a;
+  --light-pink: #fcedf6;
+  --pink: #f05ba1;
+  --gold: #faa02f;
+  --light-green-xxxxs: #F2F6F0;
+  --gray-xlight: #F8F8F8;
+  --main-red: #C90000;
+  --light-xred: #FAE5E5;
+}
+
+
 /* Import Vazirmatn font styles */
 @font-face {
   font-family: "Vazirmatn";

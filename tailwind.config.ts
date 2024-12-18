@@ -1,8 +1,8 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  important: true, // This will add `!important` to all Tailwind CSS utilities
-  
+  important: true, // Add `!important` to all utilities
+
   content: [
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -14,23 +14,24 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        lightGreen: "#00CA99",
-        mainWhite: "#ffffff",
-        mainGray: "#BDBDBD",
-        lightGreenXs: "#D8F9ED",
-        lightGreenXXs: "#e5faf5",
-        lightGreenXXXs: "#f5fbf6",
-        highGreen: "#59cb99",
-        lightGray: "#f2f2f2",
-        lightRed: "#fdefed",
-        lightOrange: "#f26e8a",
-        lightPink: "#fcedf6",
-        pink: "#f05ba1",
-        gold: "#faa02f",
-        lightGreenXXXXs: "#F2F6F0",
-        grayXlight: "#F8F8F8",
-        mainRed: "#C90000",
-        lightXRed: "#FAE5E5",
+        lightGreen: "var(--light-green)",
+        lightGreenLowOpacity: "var(--light-green-light)",
+        mainWhite: "var(--main-white)",
+        mainGray: "var(--main-gray)",
+        lightGreenXs: "var(--light-green-xs)",
+        lightGreenXXs: "var(--light-green-xxs)",
+        lightGreenXXXs: "var(--light-green-xxxs)",
+        highGreen: "var(--high-green)",
+        lightGray: "var(--light-gray)",
+        lightRed: "var(--light-red)",
+        lightOrange: "var(--light-orange)",
+        lightPink: "var(--light-pink)",
+        pink: "var(--pink)",
+        gold: "var(--gold)",
+        lightGreenXXXXs: "var(--light-green-xxxxs)",
+        grayXlight: "var(--gray-xlight)",
+        mainRed: "var(--main-red)",
+        lightXRed: "var(--light-xred)",
       },
     },
   },

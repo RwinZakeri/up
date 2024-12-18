@@ -22,7 +22,9 @@ const NotFoundComponents = () => {
           صفحه ای که به دنبال آن هستید ممکن است در صورت تغییر نام حذف شده باشد
           یا به طور موقت در دسترس نباشد.
         </p>
-        <Button className="mt-[10px] bg-green-400 text-white hover:bg-black ">بازگشت به صفحه ی اصلی </Button>
+        <Button className="mt-[10px] bg-green-400 text-white hover:bg-black ">
+          بازگشت به صفحه ی اصلی{" "}
+        </Button>
       </Box>
     </Box>
   );
