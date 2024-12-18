@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import type { HeaderItemType } from "@/types/type";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
@@ -12,6 +11,8 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import Typography from "@mui/material/Typography";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const DrawerBox = () => {
   const [headerItems, setHeaderItems] = useState<HeaderItemType[]>([]);
@@ -53,13 +54,19 @@ const DrawerBox = () => {
                   aria-controls="panel1-content"
                   id="panel1-header"
                 >
-                  <Typography>{item.title}</Typography>
+                  <Typography>
+                    <Link href={item.linkAddress || ""}>{item.title}</Link>
+                  </Typography>
                 </AccordionSummary>
                 <AccordionDetails sx={{ padding: 0, boxShadow: "none" }}>
                   <List sx={{ padding: 0, border: 0 }}>
                     {item.subMenuHeader.map((subMenu) => (
                       <ListItem key={subMenu.id}>
-                        <ListItemButton>{subMenu.title}</ListItemButton>
+                        <ListItemButton>
+                          <Link href={subMenu.linkAddress}>
+                            {subMenu.title}
+                          </Link>
+                        </ListItemButton>
                       </ListItem>
                     ))}
                   </List>
