@@ -10,7 +10,7 @@ const SkillOverViewCard: FC<SkillOverViewCardProps> = ({
   icon: IconComponent,
 }) => {
   return (
-    <Box className="relative cursor-pointer w-full xl:w-[32%] lg:w-[48%] rounded-lg bg-lightGreen/5 flex shrink-0 items-center p-8 gap-3 overflow-hidden group">
+    <Box className="relative cursor-pointer w-full xl:w-[32%] lg:w-[48%] rounded-lg bg-lightGreenXXXs flex shrink-0 items-center p-8 gap-3 overflow-hidden group">
       {/* Sliding overlay for left-to-right animation */}
       <Box className="absolute p-28 inset-0 bg-highGreen transform -translate-x-full transition-transform duration-500 group-hover:translate-x-0 opacity-0 group-hover:opacity-100"></Box>
 
@@ -21,8 +21,8 @@ const SkillOverViewCard: FC<SkillOverViewCardProps> = ({
       </Box>
 
       {/* Text container */}
-      <Box className="w-full z-10">
-        <Typography className="text-xl group-hover:text-mainWhite transition-all duration-1000 font-medium">
+      <Box className="w-full z-10 ">
+        <Typography className="text-xl  group-hover:text-mainWhite transition-all duration-1000 font-medium">
           حساب داری
         </Typography>
         <Box

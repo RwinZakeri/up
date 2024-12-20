@@ -14,7 +14,7 @@
 
 :root {
   --light-green: #00CA99;
-  --light-green-light: #00ca973d;
+  --light-green-light: #00ca971a;
   --main-white: #ffffff;
   --main-gray: #BDBDBD;
   --light-green-xs: #D8F9ED;
@@ -22,6 +22,7 @@
   --light-green-xxxs: #f5fbf6;
   --high-green: #59cb99;
   --light-gray: #f2f2f2;
+  --light-dark-gray: #7e7e7e;
   --light-red: #fdefed;
   --light-orange: #f26e8a;
   --light-pink: #fcedf6;
@@ -31,7 +32,19 @@
   --gray-xlight: #F8F8F8;
   --main-red: #C90000;
   --light-xred: #FAE5E5;
+  --white-smoke: #FAFAFA;
 }
+
+/* Add this CSS to hide the scrollbar but still allow scrolling */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
 
 
 /* Import Vazirmatn font styles */

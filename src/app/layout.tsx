@@ -1,4 +1,5 @@
 import Layout from "@/app/components/layout/index/layout";
+import { Suspense } from "react";
 import Rtl from "../../theme/Rtl";
 import "./globals.css";
 
@@ -12,13 +13,15 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <Rtl>
-        <body>
-          {/* <StyledEngineProvider injectFirst> */}
-          <Layout>{children}</Layout>
-          {/* </StyledEngineProvider> */}
-        </body>
-      </Rtl>
+      <Suspense fallback={"loading..."}>
+        <Rtl>
+          <body>
+            {/* <StyledEngineProvider injectFirst> */}
+            <Layout>{children}</Layout>
+            {/* </StyledEngineProvider> */}
+          </body>
+        </Rtl>
+      </Suspense>
     </html>
   );
 }

@@ -32,6 +32,8 @@ const config: Config = {
         grayXlight: "var(--gray-xlight)",
         mainRed: "var(--main-red)",
         lightXRed: "var(--light-xred)",
+        DarkGray: "var(--light-dark-gray)",
+        whiteSmoke: "var(--white-smoke)",
       },
     },
   },
