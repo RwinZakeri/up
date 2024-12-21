@@ -18,12 +18,12 @@ const AnimateTitle = ({
         {title}
       </Typography>
       <AnimateLine />
-      <Typography
+      {/* <Typography
         className="text-gray-400 text-lg"
         sx={{ textAlign: "center", paddingY: 1 }}
       >
         {description}
-      </Typography>
+      </Typography> */}
     </Box>
   );
 };

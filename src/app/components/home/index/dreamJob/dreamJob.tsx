@@ -12,12 +12,12 @@ const DreamJob = () => {
         className="lg:text-3xl"
         sx={{ fontSize: 22, textAlign: "center", fontWeight: "medium" }}
       >
-        مرور مشاغل بر اساس تخصص ها
+        فرصت های همکاری
       </Typography>
       <AnimateLine />
-      <Typography sx={{ textAlign: "center", paddingY: 1 }}>
+      {/* <Typography sx={{ textAlign: "center", paddingY: 1 }}>
         144 شغل زنده - 20 شغل امروز اضافه شد.
-      </Typography>
+      </Typography> */}
       <DreamJobCardContainer />
       <Link
         className="block w-fit mx-auto relative group text-center text-lightGreen after:content-[''] after:block after:absolute after:w-full after:bg-highGreen after:rounded-full after:left-0 after:h-0.5 mt-20"

@@ -85,11 +85,14 @@ const NavItems = () => {
                       }}
                     >
                       <Typography
-                        className="submenuText"
+                        className="submenuText w-full"
                         variant="body2"
                         sx={{ transition: "color 0.2s ease" }}
                       >
-                        <Link href={`/${subMenu?.linkAddress}`}>
+                        <Link
+                          className="block w-full"
+                          href={`/${subMenu?.linkAddress}`}
+                        >
                           {subMenu.title}
                         </Link>
                       </Typography>

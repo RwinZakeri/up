@@ -2,8 +2,8 @@ import db from "@/db/db.json";
 import AnimateLine from "@/modules/animateLine/animateLine";
 import HighRateFreeLanceCard from "@/modules/highRateFreeLanceCard/highRateFreeLanceCard";
 import { Freelancer } from "@/types/type";
-import { Box, Typography } from "@mui/material";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import { Box, Typography } from "@mui/material";
 
 import Link from "next/link";
 
@@ -17,7 +17,7 @@ const FreelancersArea = () => {
             variant="h2"
             className="text-xl text-center md:text-start pt-7 md:pt-0 md:text-4xl font-medium "
           >
-            فریلنسرهای دارای بالاترین امتیاز
+            پژوهشگران برتر
           </Typography>
           <Box className=" md:w-fit">
             <AnimateLine />

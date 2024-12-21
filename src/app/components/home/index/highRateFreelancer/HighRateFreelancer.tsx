@@ -14,7 +14,7 @@ const HighRateFreelancer = () => {
               variant="h2"
               className="text-xl text-center md:text-start pt-7 md:pt-0 md:text-4xl font-medium "
             >
-              فریلنسرهای دارای بالاترین امتیاز
+              پژوهشگران برتر
             </Typography>
             <Box className=" md:w-fit">
               <AnimateLine />
