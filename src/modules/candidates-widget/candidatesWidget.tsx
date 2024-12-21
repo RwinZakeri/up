@@ -15,7 +15,7 @@ const CandidatesWidget = () => {
               {item.title}
             </Typography>
             <FormControl sx={{ padding: 0 }} className="w-full ">
-              {item.categories.map((category) => (
+              {item?.categories?.map((category) => (
                 <Box className="w-f flex items-center text-gray-600 justify-between w-full group">
                   <FormControlLabel
                     className="w-full"

@@ -23,7 +23,7 @@ const DreamJob = () => {
         className="block w-fit mx-auto relative group text-center text-lightGreen after:content-[''] after:block after:absolute after:w-full after:bg-highGreen after:rounded-full after:left-0 after:h-0.5 mt-20"
         href={"/"}
       >
-        همه دسته ها را مرور کنید{" "}
+       همه فرصت ها را مرور کنید
         <ArrowBackIosNewIcon
           sx={{ fontSize: 15 }}
           className="group-hover:-translate-x-3 transition-all duration-300"

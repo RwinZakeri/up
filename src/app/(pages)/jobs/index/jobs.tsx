@@ -5,10 +5,10 @@ import { Box } from "@mui/material";
 
 const JobsComponent = () => {
   const innerTitleInfo: InnerTitleInfo = {
-    title: "فهرست مشاغل",
+    title: "فرصت های همکاری",
     mainRouteTitle: "خانه",
     mainRouteAddress: "/",
-    current: "فهرست مشاغل",
+    current: "فرصت های همکاری",
     currentAddress: "/jobs",
   };
   return (

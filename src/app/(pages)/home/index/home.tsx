@@ -1,3 +1,4 @@
+import CounterArea from "@/app/components/about/counter-area/counter-area";
 import BannerArea from "@/app/components/home/index/bannerArea/bannerArea";
 import CommentsContainer from "@/app/components/home/index/comments/comments";
 import DreamJob from "@/app/components/home/index/dreamJob/dreamJob";
@@ -17,6 +18,7 @@ const HomePage = () => {
       <CommentsContainer />
       <HighRateFreelancer />
       <RecentSentJob />
+      <CounterArea />
       {/* <PricingTable /> */}
     </Box>
   );

@@ -13,7 +13,7 @@
       "subMenuHeader": [
         {
           "id": 1,
-          "title": "فهرست مشاغل",
+          "title": "فرصت های همکاری",
           "linkAddress": "jobs"
         },
         {
@@ -23,14 +23,14 @@
         },
         {
           "id": 3,
-          "title": "ارسال اگهی",
+          "title": "ثبت پروژه",
           "linkAddress": "admin/dashboard/addJob"
         }
       ]
     },
     {
       "id": 3,
-      "title": "کارفرمایان",
+      "title": "مسِئولین پروژه",
       "linkAddress": "",
       "subMenuHeader": [
         {
@@ -38,14 +38,10 @@
           "title": "لیست کارفرمایان",
           "linkAddress": "employers-listing"
         },
-        {
-          "id": 2,
-          "title": "جزئیات کارفرمایان",
-          "linkAddress": "employerDetail"
-        },
+
         {
           "id": 3,
-          "title": "داشبورد کارفرمایان",
+          "title": "داشبورد مسئولین",
           "linkAddress": "admin/dashboard"
         }
       ]
@@ -60,11 +56,7 @@
           "title": "فهرست داوطلبان ",
           "linkAddress": "candidates-listing"
         },
-        {
-          "id": 2,
-          "title": " جزئیات داوطلبان  ",
-          "linkAddress": "employerDetail"
-        },
+
         {
           "id": 3,
           "title": "داشبورد داوطلبان",
@@ -230,7 +222,7 @@
   "jobCategory": [
     {
       "id": 1,
-      "title": "نوع استخدام",
+      "title": "فیلد ها ",
       "categories": [
         {
           "id": 123,
@@ -266,7 +258,7 @@
     },
     {
       "id": 2,
-      "title": "سطح تجربه",
+      "title": "رشته ها",
       "categories": [
         {
           "id": 129,
@@ -302,7 +294,7 @@
     },
     {
       "id": 2,
-      "title": "سطح تجربه",
+      "title": "مهارت ها",
       "categories": [
         {
           "id": 129,
@@ -335,6 +327,10 @@
           "quantity": 64
         }
       ]
+    },
+    {
+      "id": 3,
+      "title": "مهارت ها"
     }
   ],
   "candidatesListing": [
