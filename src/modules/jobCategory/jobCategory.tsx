@@ -41,7 +41,7 @@ const JobCategory = () => {
           </AccordionSummary>
           <AccordionDetails sx={{ padding: 2 }}>
             <FormControl sx={{ padding: 0 }} className="w-full ">
-              {item.categories.map((category) => (
+              {item?.categories?.map((category) => (
                 <Box className="flex items-center justify-between w-full group">
                   <FormControlLabel
                     sx={{ margin: 0 }}
