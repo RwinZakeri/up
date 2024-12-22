@@ -73,7 +73,7 @@ const BannerForm = () => {
         {/* Keyword Search */}
         <TextField
           id="outlined-basic"
-          label="کلمات کلیدی / عنوان شغلی"
+          label="کلمات کلیدی / عنوان فرصت "
           variant="outlined"
           className="w-full bg-lightGreen/15 lg:bg-transparent min-h-full"
           size="small"

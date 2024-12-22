@@ -30,13 +30,13 @@ const adminAccess = [
     id: "post-job",
     href: "dashboard-post-job.html",
     icon: <SendIcon />,
-    title: "ارسال شغل جدید",
+    title: "ارسال فرصت جدید",
   },
   {
     id: "manage-job",
     href: "dashboard-manage-job.html",
     icon: <WorkIcon />,
-    title: "مدیریت شغل ها",
+    title: "مدیریت فرصت ها",
   },
   {
     id: "applicants",

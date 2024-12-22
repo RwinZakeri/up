@@ -28,23 +28,23 @@ const AddJobForm = () => {
       <Container maxWidth="lg" className="py-40">
         <Paper className="p-8">
           <Typography className="text-xl font-medium">
-            ارسال شغل جدید
+            ارسال فرصت  جدید
           </Typography>
           <Box className="w-fit">
             <AnimateLine />
           </Box>
           <FormControl className="w-full flex flex-col gap-7 py-8">
             <Box>
-              <Typography>عنوان شغلی</Typography>
+              <Typography>عنوان فرصت </Typography>
               <TextField
                 className="w-full mt-4"
                 id="filled-basic"
-                label="عنوان شغلی"
+                label="عنوان فرصت "
                 variant="filled"
               />
             </Box>
             <Box>
-              <Typography>شرح شغل</Typography>
+              <Typography>شرح فرصت </Typography>
               <TextField
                 className="w-full mt-4"
                 id="filled-multiline"

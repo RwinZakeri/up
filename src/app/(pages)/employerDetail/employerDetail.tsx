@@ -6,10 +6,10 @@ import { Box } from "@mui/material";
 
 const EmployerDetailComponent = () => {
   const innerTitleInfo: InnerTitleInfo = {
-    title: "جزئیات کارفرمایان",
+    title: "جزئیات مسِئولین ",
     mainRouteTitle: "خانه",
     mainRouteAddress: "/",
-    current: "جزئیات کارفرمایان",
+    current: "جزئیات مسِئولین ",
     currentAddress: "/employerDetail",
   };
   return (

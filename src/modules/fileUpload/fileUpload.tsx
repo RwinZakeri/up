@@ -1,13 +1,13 @@
 import AnimateLine from "@/modules/animateLine/animateLine";
-import { Box } from "@mui/material";
 import UploadFileIcon from "@mui/icons-material/UploadFile";
+import { Box } from "@mui/material";
 
 const FileUpload = () => {
   return (
     <Box className="standardContainer absolute top-[-25%] left-1/2 -translate-x-1/2 mt-5 bg-lightGreen flex justify-between items-center py-16 px-10 rounded-[30px]">
       <Box>
         <h2 className="text-[40px] text-white">
-          اجازه دهید کارفرمایان شما را پیدا کنند
+          اجازه دهید مسِئولین شما را پیدا کنند
         </h2>
         <Box className="w-[15%]">
           <AnimateLine />

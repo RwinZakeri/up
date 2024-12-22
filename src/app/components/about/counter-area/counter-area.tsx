@@ -7,41 +7,38 @@ const CounterArea = () => {
       <Box className="w-full flex justify-around items-center gap-x-2 flex-wrap">
         <Box className="flex flex-col justify-center items-center">
           <h3 className="text-[45px]">
-            <span>14</span>
-            k
+            <span>300</span>
           </h3>
           <Box className="w-[100%]">
             <AnimateLine />
           </Box>
           <Box className="text-[#696969] text-[14px]">
-            <p>بیش از 14 هزار موقعیت شغلی باز</p>
+            <p>بیش از 300 پروژه فعال</p>
           </Box>
         </Box>
         <Box className="flex flex-col justify-center items-center">
           <h3 className="text-[45px]">
-            <span>187,113</span>
-            
+            <span>732</span>
           </h3>
           <Box className="w-[100%]">
             <AnimateLine />
           </Box>
           <Box className="text-[#696969] text-[14px]">
-            <p>1,87,113 کل شغل ارسال شده</p>
+            <p>732 پروژه تعریف شده</p>
           </Box>
         </Box>
         <Box className="flex flex-col justify-center items-center">
           <h3 className="text-[45px]">
-            <span>5</span>
-            M
+            <span>100</span>
+            {/* M */}
           </h3>
           <Box className="w-[100%]">
             <AnimateLine />
           </Box>
           <Box className="text-[#696969] text-[14px]">
-            <p>5 میلیون کاربر فعال روزانه</p>
+            <p>صد کاربر فعال روزانه</p>
           </Box>
         </Box>
-    
       </Box>
     </Box>
   );

@@ -33,7 +33,7 @@ const HighRateFreeLanceCard = ({
       <Box className="flex flex-col md:flex-row items-center justify-between  md:px-0 lg:gap-8  w-full">
         <Box className="mb-2 md:mb-0 text-base  md:text-sm font-semibold text-black">
           <Typography sx={{ display: "flex", color: "gray" }}>
-            موفقیت شغلی :{" "}
+            موفقیت فرصت :{" "}
             <Typography variant="caption" className="text-black text-base">
               {jobPosition}%
             </Typography>

@@ -1,6 +1,6 @@
+import myImage from "@/assets/images/user-img/user-img1.jpg";
 import { Box, Button, Typography } from "@mui/material";
 import Image from "next/image";
-import myImage from "@/assets/images/user-img/user-img1.jpg";
 
 const PricingPlan = () => {
   return (
@@ -81,7 +81,7 @@ const PricingPlan = () => {
               <span className="text-[18px] text-[#696969]">/ماه</span>
             </h3>
             <ul className="text-[15px] text-[#696969] flex flex-col gap-y-3">
-              <li>8 شغل ویژه</li>
+              <li>8 فرصت ویژه</li>
               <li>20 ماهنامه پست کاری</li>
               <li>نمایش به مدت 30 روز</li>
               <li>پشتیبانی 24/7</li>
@@ -93,7 +93,7 @@ const PricingPlan = () => {
               </Button>
             </Box>
           </Box>
-   
+
           <Box className="py-[50px] px-[30px] rounded-[20px] boxShadowJob text-center">
             <Box className="">
               <h2 className="text-[24px] pb-2">طرح توسعه</h2>
@@ -104,7 +104,7 @@ const PricingPlan = () => {
               <span className="text-[18px] text-[#696969]">/ماه</span>
             </h3>
             <ul className="text-[15px] text-[#696969] flex flex-col gap-y-3">
-              <li>8 شغل ویژه</li>
+              <li>8 فرصت ویژه</li>
               <li>20 ماهنامه پست کاری</li>
               <li>نمایش به مدت 30 روز</li>
               <li>پشتیبانی 24/7</li>
@@ -116,7 +116,6 @@ const PricingPlan = () => {
               </Button>
             </Box>
           </Box>
-   
         </Box>
       </Box>
     </Box>

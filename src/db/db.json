@@ -8,7 +8,7 @@
 
     {
       "id": 2,
-      "title": "شغل",
+      "title": "فرصت",
       "linkAddress": "",
       "subMenuHeader": [
         {
@@ -35,7 +35,7 @@
       "subMenuHeader": [
         {
           "id": 1,
-          "title": "لیست کارفرمایان",
+          "title": "لیست مسِئولین ",
           "linkAddress": "employers-listing"
         },
 
@@ -48,18 +48,18 @@
     },
     {
       "id": 4,
-      "title": "داوطلبان ",
+      "title": "پژوهشگران  ",
       "linkAddress": "",
       "subMenuHeader": [
         {
           "id": 1,
-          "title": "فهرست داوطلبان ",
+          "title": "فهرست پژوهشگران  ",
           "linkAddress": "candidates-listing"
         },
 
         {
           "id": 3,
-          "title": "داشبورد داوطلبان",
+          "title": "داشبورد پژوهشگران ",
           "linkAddress": "admin/dashboard"
         }
       ]
@@ -84,7 +84,7 @@
     },
     {
       "id": 6,
-      "title": "صفحات",
+      "title": "سایر",
       "linkAddress": "",
       "subMenuHeader": [
         {
@@ -97,45 +97,17 @@
           "title": "تماس با ما",
           "linkAddress": "contactUs"
         },
-        {
-          "id": 3,
-          "title": "بازخورد مشتریان",
-          "linkAddress": "customerFeedback"
-        },
-        {
-          "id": 4,
-          "title": "فریلنسر",
-          "linkAddress": "freelancer"
-        },
-        {
-          "id": 5,
-          "title": "پلن قیمت گذاری",
-          "linkAddress": "pricingArea"
-        },
+
         {
           "id": 6,
           "title": "سوالات متداول",
           "linkAddress": "frequentlyAskedQuestions"
         },
-        {
-          "id": 7,
-          "title": "ورود / ثبت نام",
-          "linkAddress": "/products/discounts"
-        },
+
         {
           "id": 8,
           "title": "قوانین و ظوابط",
           "linkAddress": "rules"
-        },
-        {
-          "id": 9,
-          "title": "حریم خصوصی",
-          "linkAddress": "privacy"
-        },
-        {
-          "id": 10,
-          "title": "صفحه ی 404",
-          "linkAddress": "notFound"
         }
       ]
     }

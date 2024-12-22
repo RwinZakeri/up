@@ -14,7 +14,7 @@ const NotificationJob = () => {
           marginBottom: 3,
         }}
       >
-        <Typography className="font-medium">ایجاد هشدار شغلی</Typography>
+        <Typography className="font-medium">ایجاد هشدار فرصت </Typography>
         <Image
           src={notifImage}
           alt="alarm"
@@ -24,17 +24,17 @@ const NotificationJob = () => {
         />
       </Box>
       <Typography className="text-gray-400" sx={{ marginBottom: 3 }}>
-        اکنون یک هشدار شغلی ایجاد کنید و هیچ به‌روزرسانی شغلی را از دست ندهید.
+        اکنون یک هشدار فرصت ایجاد کنید و هیچ به‌روزرسانی فرصت را از دست ندهید.
       </Typography>
       <FormControl sx={{ width: "100%" }}>
         <TextField
           variant="outlined"
           size="small"
           sx={{ width: "100%", marginBottom: 2, borderRadius: 100 }}
-          label="کلمات کلیدی / عنوان شغلی"
+          label="کلمات کلیدی / عنوان فرصت "
         />
         <Button variant="contained" sx={{ width: "fit-content" }} type="submit">
-          ایجاد هشدار شغلی
+          ایجاد هشدار فرصت
           <BusinessCenterIcon sx={{ marginRight: 1 }} />
         </Button>
       </FormControl>

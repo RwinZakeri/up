@@ -12,7 +12,7 @@ const JobDescription = () => {
     <Box className=" px-6 py-7  mt-[30px]">
       <Box>
         <Box>
-          <Typography className="text-2xl font-medium">شرح شغل</Typography>
+          <Typography className="text-2xl font-medium">شرح فرصت </Typography>
         </Box>
         <Box className="w-[10%]">
           <AnimateLine />

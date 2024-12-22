@@ -30,12 +30,12 @@ import plantAtOfficeImage from "@/assets/images/career/career-img1.jpg";
 // Types
 import type { InnerTitleInfo } from "@/types/type";
 
-const   EmployersListingComponent = () => {
+const EmployersListingComponent = () => {
   const innerTitleInfo: InnerTitleInfo = {
-    title: "لیست کارفرمایان",
+    title: "لیست مسِئولین ",
     mainRouteTitle: "خانه",
     mainRouteAddress: "/",
-    current: "لیست کارفرمایان",
+    current: "لیست مسِئولین ",
     currentAddress: "/employers-listing",
   };
   return (
@@ -106,8 +106,8 @@ const   EmployersListingComponent = () => {
             <Box className="w-full md:w-1/2 px-8 ">
               <Box className="mb-6">
                 <Typography className="text-sm md:text-[34px] lg:text-[44px] md:leading-[50px] font-semibold">
-                  کات <span className="text-highGreen ">شغلی سریع</span> به شما
-                  کمک می کند تا بهترین شغلی را که مناسب شماست به دست آورید.
+                  کات <span className="text-highGreen ">فرصت  سریع</span> به شما
+                  کمک می کند تا بهترین فرصت را که مناسب شماست به دست آورید.
                 </Typography>
                 <Box className="w-fit">
                   <AnimateLine />

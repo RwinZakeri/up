@@ -17,7 +17,7 @@ const AboutArea = () => {
         </Box>
         <Box className="md:w-[45%]">
           <Box>
-            <Typography className="text-2xl font-medium">شرح شغل</Typography>
+            <Typography className="text-2xl font-medium">شرح فرصت </Typography>
           </Box>
           <Box className="w-[10%]">
             <AnimateLine />

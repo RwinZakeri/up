@@ -21,10 +21,10 @@ const BannerArea = async () => {
       >
         بیش از
         <strong className="text-lightGreen mx-2">10,000+</strong>
-        شغل در نزدیکی شما موجود است.
+        فرصت در نزدیکی شما موجود است.
       </Typography>
       <Typography variant="body1" sx={{ fontSize: 15, marginBottom: 1 }}>
-        شغل پیدا کنید، کارشناسان استخدام کنید یا در فروش و بازاریابی استخدام
+        فرصت پیدا کنید، کارشناسان استخدام کنید یا در فروش و بازاریابی استخدام
         شوید
       </Typography>
       <Box className="w-full  lg:w-3/5">

@@ -12,7 +12,7 @@ const KeyWordSearch = () => {
         }}
       >
         <Typography className="font-medium text-lg">
-          ایجاد هشدار شغلی
+          ایجاد هشدار فرصت 
         </Typography>
       </Box>
 
@@ -21,7 +21,7 @@ const KeyWordSearch = () => {
           variant="outlined"
           size="small"
           sx={{ width: "100%", marginBottom: 2, borderRadius: 100 }}
-          label="کلمات کلیدی / عنوان شغلی"
+          label="کلمات کلیدی / عنوان فرصت "
         />
       </FormControl>
     </Box>

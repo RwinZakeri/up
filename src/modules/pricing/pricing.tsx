@@ -66,22 +66,22 @@ const PricingTable = () => {
             <TableBody>
               <TableRow>
                 <TableCell align="right" className="border-r">
-                  پست های شغلی شامل
+                  پست های فرصت شامل
                 </TableCell>
                 <TableCell
                   align="center"
                   className="border-x bg-lightGreenXXs text-lightGreen"
                 >
-                  پست 10 شغل
+                  پست 10 فرصت
                 </TableCell>
                 <TableCell align="center" className="border-l">
-                  پست 22 شغل
+                  پست 22 فرصت
                 </TableCell>
               </TableRow>
 
               <TableRow>
                 <TableCell align="right" className="border-r">
-                  شغل ویژه
+                  فرصت ویژه
                 </TableCell>
                 <TableCell
                   align="center"
@@ -113,7 +113,7 @@ const PricingTable = () => {
               <TableRow>
                 <TableCell align="right" className="border-r">
                   {" "}
-                  امار ارسال شغل
+                  امار ارسال فرصت
                 </TableCell>
                 <TableCell
                   align="center"

@@ -6,7 +6,7 @@ const RecentSentJob = () => {
   return (
     <Box className="w-full text-center py-12 px-4 bg-lightGray">
       <Typography variant="h2" className="text-2xl md:text-4xl font-medium">
-        شغل اخیر ارسال شده
+      فرصت اخیر ارسال شده
       </Typography>
       <AnimateLine />
       <Typography className="text-gray-400 md:text-lg mx-auto md:w-2/5">

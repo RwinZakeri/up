@@ -5,10 +5,10 @@ import { Box } from "@mui/material";
 
 const CandidatesListingComponent = () => {
   const innerTitleInfo: InnerTitleInfo = {
-    title: "فهرست داوطلبان",
+    title: "فهرست پژوهشگران ",
     mainRouteTitle: "خانه",
     mainRouteAddress: "/",
-    current: "فهرست داوطلبان",
+    current: "فهرست پژوهشگران ",
     currentAddress: "/candidates-listing",
   };
 

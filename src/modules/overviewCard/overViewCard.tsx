@@ -35,7 +35,7 @@ const SkillOverViewCard: FC<SkillOverViewCardProps> = ({
           }}
         >
           <Typography className="font-light group-hover:text-mainWhite transition-all duration-1000 ">
-            (موقعیت شغلی{22})
+            (موقعیت فرصت {22})
           </Typography>
           <ArrowBackIosNewIcon
             sx={{ fontSize: 17 }}
