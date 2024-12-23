@@ -5,9 +5,9 @@ import Image from "next/image";
 import { Box, Container, Typography } from "@mui/material";
 
 // Custom components
-import { default as EmployersListingCardContainer } from "@/app/components/employers-listing/employersListingCompanyCardContainer";
-import EmployersListingMasterCardContainer from "@/app/components/employers-listing/employersListingMasterCardContainer";
-import InnerTitle from "@/app/components/jobs/index/innerTitle/innterTitle";
+import { default as EmployersListingCardContainer } from "@/components/employers-listing/employersListingCompanyCardContainer";
+import EmployersListingMasterCardContainer from "@/components/employers-listing/employersListingMasterCardContainer";
+import InnerTitle from "@/components/jobs/index/innerTitle/innterTitle";
 
 // Modules
 import AnimateLine from "@/modules/animateLine/animateLine";
@@ -106,7 +106,7 @@ const EmployersListingComponent = () => {
             <Box className="w-full md:w-1/2 px-8 ">
               <Box className="mb-6">
                 <Typography className="text-sm md:text-[34px] lg:text-[44px] md:leading-[50px] font-semibold">
-                  کات <span className="text-highGreen ">فرصت  سریع</span> به شما
+                  کات <span className="text-highGreen ">فرصت سریع</span> به شما
                   کمک می کند تا بهترین فرصت را که مناسب شماست به دست آورید.
                 </Typography>
                 <Box className="w-fit">

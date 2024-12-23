@@ -1,4 +1,4 @@
-import InnerTitle from "@/app/components/jobs/index/innerTitle/innterTitle";
+import InnerTitle from "@/components/jobs/index/innerTitle/innterTitle";
 import AnimateLine from "@/modules/animateLine/animateLine";
 import BlogSkeleton from "@/modules/blog-skeleton/blogSkeleton";
 import BlogCard from "@/modules/blogCard/blogCard";

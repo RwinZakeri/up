@@ -60,6 +60,25 @@ const AccordionQuestions = () => {
             </Typography>
           </AccordionDetails>
         </Accordion>
+        <Accordion className="mb-[20px] bg-[#F5FBF6]" disableGutters>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel3-content"
+            id="panel3-header"
+            className="bg-[white]"
+          >
+            <Typography>
+              چگونه می‌توانم مطمئن شوم که پروژه‌های موجود معتبر هستند؟
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails className="bg-[white]">
+            <Typography>
+              تمام پروژه‌ها و پروفایل‌های سازمانی قبل از انتشار توسط تیم ما
+              بررسی و تأیید می‌شوند. همچنین، هر پژوهشگر و سازمان دارای سیستم
+              امتیازدهی و بازخورد است که به شفافیت بیشتر کمک می‌کند.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
       </Box>
       <Box className="w-[45%]">
         <Accordion className="mb-[20px] bg-[#F5FBF6]" disableGutters>
@@ -97,6 +116,25 @@ const AccordionQuestions = () => {
               می‌توانند به‌صورت رایگان ثبت‌نام کنند، اما برای دسترسی به امکانات
               پیشرفته مانند افزایش تعداد پروژه‌ها یا استفاده از ابزارهای خاص،
               بسته‌های اشتراکی ویژه ارائه می‌شود.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+
+        <Accordion className="mb-[20px] bg-[#F5FBF6]" disableGutters>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel3-content"
+            id="panel3-header"
+            className="bg-[white]"
+          >
+            <Typography>
+              آیا امکان ارتباط مستقیم بین پژوهشگر و مدیر پروژه وجود دارد؟
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails className="bg-[white]">
+            <Typography>
+              بله، پس از تأیید درخواست همکاری، پژوهشگر و مدیر پروژه می‌توانند از
+              طریق بخش پیام‌های سایت به‌صورت مستقیم با یکدیگر در ارتباط باشند.
             </Typography>
           </AccordionDetails>
         </Accordion>

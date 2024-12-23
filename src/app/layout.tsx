@@ -1,4 +1,4 @@
-import Layout from "@/app/components/layout/index/layout";
+import Layout from "@/components/layout/index/layout";
 import { Suspense } from "react";
 import Rtl from "../../theme/Rtl";
 import "./globals.css";

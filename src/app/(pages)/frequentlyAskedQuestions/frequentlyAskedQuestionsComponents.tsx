@@ -1,7 +1,6 @@
-import SectionTitle from "@/app/components/contactUs/section-title/sectionTitle";
-import AccordionQuestions from "@/app/components/frequentlyAskedQuestions/accordionQuestions/accordionQuestions";
-import SectionTitleQuestions from "@/app/components/frequentlyAskedQuestions/sectionTitleQuestions/sectionTitleQuestions";
-import InnerTitle from "@/app/components/jobs/index/innerTitle/innterTitle";
+import AccordionQuestions from "@/components/frequentlyAskedQuestions/accordionQuestions/accordionQuestions";
+import SectionTitleQuestions from "@/components/frequentlyAskedQuestions/sectionTitleQuestions/sectionTitleQuestions";
+import InnerTitle from "@/components/jobs/index/innerTitle/innterTitle";
 import { InnerTitleInfo } from "@/types/type";
 import { Box } from "@mui/material";
 
@@ -16,7 +15,7 @@ const FrequentlyAskedQuestionsComponents = () => {
   return (
     <Box>
       <InnerTitle innerTitleInfo={innerTitleInfo} />
-      <SectionTitleQuestions/>
+      <SectionTitleQuestions />
       <AccordionQuestions />
     </Box>
   );

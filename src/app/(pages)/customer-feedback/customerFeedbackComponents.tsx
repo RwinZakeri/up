@@ -1,7 +1,6 @@
-import CounterArea from "@/app/components/about/counter-area/counter-area";
-import FreelancersArea from "@/app/components/about/freelancers-area/freelancers-area";
-import CommentsContainer from "@/app/components/home/index/comments/comments";
-import InnerTitle from "@/app/components/jobs/index/innerTitle/innterTitle";
+import CounterArea from "@/components/about/counter-area/counter-area";
+import CommentsContainer from "@/components/home/index/comments/comments";
+import InnerTitle from "@/components/jobs/index/innerTitle/innterTitle";
 import AnimateTitle from "@/modules/animateTitle/animateTitle";
 import { InnerTitleInfo } from "@/types/type";
 import { Box } from "@mui/material";
@@ -23,8 +22,8 @@ const CustomerFeedbackComponents = () => {
           description="ما نظرات کاربران خود را جمع‌آوری می‌کنیم تا بتوانید نظر صادقانه‌ای در مورد اینکه تجربه با وب‌سایت ما واقعاً چگونه است، دریافت کنید!"
         />
       </Box>
-      <CommentsContainer/>
-      <CounterArea/>
+      <CommentsContainer />
+      <CounterArea />
     </Box>
   );
 };

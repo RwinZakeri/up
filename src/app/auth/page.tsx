@@ -9,7 +9,7 @@ import {
   TextField,
 } from "@mui/material";
 import Link from "next/link";
-import InnerTitle from "../components/jobs/index/innerTitle/innterTitle";
+import InnerTitle from "../../components/jobs/index/innerTitle/innterTitle";
 
 // Remove unnecessary import of block from sharp
 // Remove CheckBox and Label imports as they're not being used.

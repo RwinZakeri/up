@@ -1,9 +1,9 @@
-import AboutArea from "@/app/components/about/about-area/aboutArea";
-import CareerArea from "@/app/components/about/career-area/career-area";
-import CounterArea from "@/app/components/about/counter-area/counter-area";
-import FreelancersArea from "@/app/components/about/freelancers-area/freelancers-area";
-import CommentsContainer from "@/app/components/home/index/comments/comments";
-import InnerTitle from "@/app/components/jobs/index/innerTitle/innterTitle";
+import AboutArea from "@/components/about/about-area/aboutArea";
+import CareerArea from "@/components/about/career-area/career-area";
+import CounterArea from "@/components/about/counter-area/counter-area";
+import FreelancersArea from "@/components/about/freelancers-area/freelancers-area";
+import CommentsContainer from "@/components/home/index/comments/comments";
+import InnerTitle from "@/components/jobs/index/innerTitle/innterTitle";
 import type { InnerTitleInfo } from "@/types/type";
 import { Box } from "@mui/material";
 
