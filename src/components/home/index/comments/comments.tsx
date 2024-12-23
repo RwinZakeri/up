@@ -1,6 +1,7 @@
 "use client";
-import db from "@/db/db.json";
+
 import CommentCard from "@/modules/commentCard/commentCard";
+import { CommentSliderItem, myCommentComponentTypes } from "@/types/type";
 import { Box } from "@mui/material";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -8,11 +9,9 @@ import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "../../../../app/globals.css";
 
-const CommentsContainer = () => {
-  const { commentSlider } = db;
-
+const CommentsContainer = ({ data }: myCommentComponentTypes) => {
   return (
-    <Box className="w-full p-12 mx-auto bg-lightGreenXXXs">
+    <Box className="w-full p-12 mx-auto bg-lightGreenXXXs my-12">
       <Box className="max-w-[980px] mx-auto">
         <Swiper
           pagination={{
@@ -20,15 +19,15 @@ const CommentsContainer = () => {
           }}
           loop={true} // Enables infinite loop
           autoplay={{
-            delay: 4000, // 1000 seconds in milliseconds
+            delay: 4000, // 4000 milliseconds
             disableOnInteraction: false, // Autoplay doesn't stop on user interaction
           }}
-          modules={[Pagination, Autoplay]} // Add Autoplay module here
+          modules={[Pagination, Autoplay]}
           className="mySwiper"
         >
-          {commentSlider?.map((item, index) => (
-            <SwiperSlide key={index}>
-              <CommentCard comment={item} />
+          {data?.map((item) => (
+            <SwiperSlide key={item.id}>
+              <CommentCard comment={item as CommentSliderItem} />
             </SwiperSlide>
           ))}
         </Swiper>

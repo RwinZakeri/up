@@ -4,9 +4,9 @@ import CounterArea from "@/components/about/counter-area/counter-area";
 import FreelancersArea from "@/components/about/freelancers-area/freelancers-area";
 import CommentsContainer from "@/components/home/index/comments/comments";
 import InnerTitle from "@/components/jobs/index/innerTitle/innterTitle";
+import db from "@/db/db.json";
 import type { InnerTitleInfo } from "@/types/type";
 import { Box } from "@mui/material";
-
 const AboutComponent = () => {
   const innerTitleInfo: InnerTitleInfo = {
     title: "درباره ما",
@@ -16,6 +16,8 @@ const AboutComponent = () => {
     currentAddress: "/jobs",
   };
 
+  const { commentSlider } = db;
+
   return (
     <Box className=" ">
       {/* <InnerTitleAbout/> */}
@@ -23,7 +25,7 @@ const AboutComponent = () => {
       <AboutArea />
       <CounterArea />
       <CareerArea />
-      <CommentsContainer />
+      <CommentsContainer data={commentSlider} />
       {/* <HighRateFreeLanceCard/> */}
       <FreelancersArea />
     </Box>

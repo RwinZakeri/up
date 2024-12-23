@@ -5,9 +5,14 @@ import DreamJob from "@/components/home/index/dreamJob/dreamJob";
 import HighRateFreelancer from "@/components/home/index/highRateFreelancer/HighRateFreelancer";
 import RecentSentJob from "@/components/home/index/recentSentJob/recentSentJob";
 // import SkillOverView from "@/app/components/home/index/skillOverView/skillOverView";
+import db from "@/db/db.json";
+import type { commentsSwiper } from "@/types/type";
 import { Box } from "@mui/material";
-
 const HomePage = () => {
+  const commentSlider: commentsSwiper[] = db.commentSlider;
+  const hamkaran: commentsSwiper[] = db.hamkar;
+
+  console.log(db.commentSlider);
   return (
     <Box className="">
       <Box className="bg-lightGreenLowOpacity">
@@ -15,8 +20,9 @@ const HomePage = () => {
       </Box>
       {/* <SkillOverView /> */}
       <DreamJob />
-      <CommentsContainer />
-      <CommentsContainer />
+      <CommentsContainer data={commentSlider} />
+      <CommentsContainer data={hamkaran} />
+      {/* <CommentsContainer /> */}
       <HighRateFreelancer />
       <RecentSentJob />
       <CounterArea />

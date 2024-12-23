@@ -82,3 +82,17 @@ type BlogPostDetail = {
   author: Author;
   comments: Comment[];
 };
+
+// com
+
+export interface commentsSwiper {
+  id: number;
+  title: string;
+  description?: string;
+  profileAddress?: string;
+}
+
+// Correcting the type to accept a 1D array
+export interface myCommentComponentTypes {
+  data: commentsSwiper[]; // Now accepts a 1D array of commentsSwiper
+}

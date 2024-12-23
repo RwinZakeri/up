@@ -30,7 +30,7 @@ const BeautifulLoading: React.FC = () => {
           animation: "fadeIn 1.5s ease-in-out infinite",
         }}
       >
-        Loading, please wait...
+        در حال بارگزاری صفحه لطفا کمی صبر کنید ):
       </Typography>
       <style>{`
         @keyframes spin {
