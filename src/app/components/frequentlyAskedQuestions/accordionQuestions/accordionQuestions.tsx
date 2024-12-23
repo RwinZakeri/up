@@ -1,17 +1,11 @@
 "use client";
-import { Box } from "@mui/material";
-import * as React from "react";
-import Accordion, {
-  AccordionSlots,
-  accordionClasses,
-} from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails, {
-  accordionDetailsClasses,
-} from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import Fade from "@mui/material/Fade";
+import { Box } from "@mui/material";
+import Accordion from "@mui/material/Accordion";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import Typography from "@mui/material/Typography";
+import * as React from "react";
 const AccordionQuestions = () => {
   const [expanded, setExpanded] = React.useState(false);
 
@@ -20,33 +14,12 @@ const AccordionQuestions = () => {
   };
   return (
     <Box className=" flex justify-center gap-y-5 gap-x-5 flex-wrap pb-[50px]">
-      <Box className="w-[45%]">
+      <Box className="w-[45%] bg-red-500">
         <Accordion
           disableGutters
           className=" bg-[#F5FBF6] mb-[20px]"
           expanded={expanded}
           onChange={handleExpansion}
-          slots={{ transition: Fade as AccordionSlots["transition"] }}
-          slotProps={{ transition: { timeout: 400 } }}
-          sx={[
-            expanded
-              ? {
-                  [`& .${accordionClasses.region}`]: {
-                    height: "auto",
-                  },
-                  [`& .${accordionDetailsClasses.root}`]: {
-                    display: "block",
-                  },
-                }
-              : {
-                  [`& .${accordionClasses.region}`]: {
-                    height: 0,
-                  },
-                  [`& .${accordionDetailsClasses.root}`]: {
-                    display: "none",
-                  },
-                },
-          ]}
         >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -54,13 +27,16 @@ const AccordionQuestions = () => {
             id="panel1-header"
             className="bg-[white]"
           >
-            <Typography>Custom transition using Fade</Typography>
+            <Typography className="text-xl font-bold">
+              چگونه می‌توانم به‌عنوان پژوهشگر عضو سایت شوم؟
+            </Typography>
           </AccordionSummary>
           <AccordionDetails className="bg-[white]">
             <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
+              برای عضویت به‌عنوان پژوهشگر، کافی است در صفحه ثبت‌نام اطلاعات
+              اولیه خود را وارد کرده و پس از تأیید ایمیل، پروفایل خود را تکمیل
+              کنید. با تکمیل مهارت‌ها و سابقه کاری، می‌توانید برای پروژه‌های
+              مرتبط درخواست ارسال کنید.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -71,13 +47,16 @@ const AccordionQuestions = () => {
             id="panel2-header"
             className="bg-[white]"
           >
-            <Typography>Default transition using Collapse</Typography>
+            <Typography>
+              {" "}
+              آیا مراکز تحقیقات و سازمان‌ها نیز می‌توانند عضو شوند؟
+            </Typography>
           </AccordionSummary>
           <AccordionDetails className="bg-[white]">
             <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
+              بله، مراکز تحقیقات و سازمان‌ها می‌توانند با ایجاد پروفایل اختصاصی
+              خود، پروژه‌های پژوهشی تعریف کنند و پژوهشگرانی را که متناسب با
+              نیازشان هستند، پیدا کنند.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -90,13 +69,16 @@ const AccordionQuestions = () => {
             id="panel3-header"
             className="bg-[white]"
           >
-            <Typography>Default transition using Collapse</Typography>
+            <Typography>
+              چگونه می‌توانم درخواست همکاری برای یک پروژه ارسال کنم؟
+            </Typography>
           </AccordionSummary>
           <AccordionDetails className="bg-[white]">
             <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
+              پس از مشاهده جزئیات پروژه، اگر مهارت‌ها و تجربه‌های شما با نیازهای
+              پروژه مطابقت دارد، می‌توانید از طریق دکمه "ارسال درخواست"،
+              علاقه‌مندی خود را به مدیر پروژه اعلام کنید. در صورت تأیید،
+              می‌توانید کار بر روی پروژه را آغاز کنید.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -107,13 +89,14 @@ const AccordionQuestions = () => {
             id="panel4-header"
             className="bg-[white]"
           >
-            <Typography>Default transition using Collapse</Typography>
+            <Typography>هزینه عضویت در سایت چگونه است؟</Typography>
           </AccordionSummary>
           <AccordionDetails className="bg-[white]">
             <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
+              عضویت پایه برای پژوهشگران رایگان است. مراکز و سازمان‌ها نیز
+              می‌توانند به‌صورت رایگان ثبت‌نام کنند، اما برای دسترسی به امکانات
+              پیشرفته مانند افزایش تعداد پروژه‌ها یا استفاده از ابزارهای خاص،
+              بسته‌های اشتراکی ویژه ارائه می‌شود.
             </Typography>
           </AccordionDetails>
         </Accordion>

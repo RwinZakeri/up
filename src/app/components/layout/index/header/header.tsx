@@ -3,15 +3,20 @@ import Logo from "@/assets/images/logo.png";
 import DrawerComponent from "@/modules/drawer/DrawerComponent";
 import NavItems from "@/modules/layout/header/navItems/navItems";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
+// const BusinessCenterIcon = dynamic(
+//   () => import("@mui/icons-material/BusinessCenter"),
+//   { ssr: false }
+// );
 import PersonIcon from "@mui/icons-material/Person";
 import { Box, Button } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-
+  const router = useRouter();
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -29,6 +34,10 @@ const Header = () => {
     };
   }, []);
 
+  const loginHandler = () => {
+    router.push("/auth");
+  };
+
   return (
     <header
       className={`w-full fixed top-0 px-4 left-0 z-50 transition-all duration-300 ${
@@ -36,7 +45,6 @@ const Header = () => {
       }`}
     >
       <Box
-
         className="w-full xl:w-11/12 mx-auto"
         sx={{
           width: "100%",
@@ -44,7 +52,7 @@ const Header = () => {
           alignItems: "center",
           justifyContent: "space-between",
           padding: { xs: "10px", md: "0px" },
-          boxShadow: "none", // Removed box shadow completely
+          boxShadow: "none",
         }}
       >
         <Box sx={{ display: "flex", alignItems: "center", gap: "40px" }}>
@@ -57,6 +65,7 @@ const Header = () => {
         <Box sx={{ display: "flex", alignItems: "center" }}>
           <Box sx={{ display: "flex", gap: 1 }} className="hidden lg:flex">
             <Button
+              onClick={loginHandler}
               variant="outlined"
               size="large"
               sx={{ display: { xs: "none", md: "block" } }}
