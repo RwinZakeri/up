@@ -22,10 +22,10 @@ const FreelancersArea = () => {
           <Box className=" md:w-fit">
             <AnimateLine />
           </Box>
-          <Typography className="text-gray-400 text-center md:text-start">
+          {/* <Typography className="text-gray-400 text-center md:text-start">
             ما نظرات کاربران خود را جمع‌آوری می‌کنیم تا بتوانید نظر صادقانه‌ای
             در مورد تجربه واقعی وب‌سایت ما داشته باشید!
-          </Typography>
+          </Typography> */}
         </Box>
         <Box className="w-1/2 flex items-start md:justify-end justify-center">
           <Link

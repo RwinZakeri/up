@@ -19,17 +19,17 @@ const HighRateFreelancer = () => {
             <Box className=" md:w-fit">
               <AnimateLine />
             </Box>
-            <Typography className="text-gray-400 text-center md:text-start">
+            {/* <Typography className="text-gray-400 text-center md:text-start">
               ما نظرات کاربران خود را جمع‌آوری می‌کنیم تا بتوانید نظر صادقانه‌ای
               در مورد تجربه واقعی وب‌سایت ما داشته باشید!
-            </Typography>
+            </Typography> */}
           </Box>
           <Box className="w-1/2 flex items-start md:justify-end justify-center">
             <Link
               className="w-fit relative group text-center text-lightGreen after:content-[''] after:block after:absolute after:w-full after:bg-highGreen after:rounded-full after:left-0 after:h-0.5"
               href={"/"}
             >
-          همه فرصت ها را مرور کنید
+              همه فرصت ها را مرور کنید
               <ArrowBackIosNewIcon
                 sx={{ fontSize: 15 }}
                 className="group-hover:-translate-x-3 transition-all duration-300"

@@ -24,10 +24,10 @@ const AboutComponent = () => {
       <InnerTitle innerTitleInfo={innerTitleInfo} />
       <AboutArea />
       <CounterArea />
-      <CareerArea />
-      <CommentsContainer data={commentSlider} />
+      {/* <CareerArea /> */}
+      {/* <CommentsContainer data={commentSlider} /> */}
       {/* <HighRateFreeLanceCard/> */}
-      <FreelancersArea />
+      {/* <FreelancersArea /> */}
     </Box>
   );
 };
