@@ -1,5 +1,5 @@
 import CounterArea from "@/components/about/counter-area/counter-area";
-import CommentsContainer from "@/components/home/index/comments/comments";
+// import CommentsContainer from "@/components/home/index/comments/comments";
 import InnerTitle from "@/components/jobs/index/innerTitle/innterTitle";
 import AnimateTitle from "@/modules/animateTitle/animateTitle";
 import { InnerTitleInfo } from "@/types/type";
@@ -22,7 +22,7 @@ const CustomerFeedbackComponents = () => {
           description="ما نظرات کاربران خود را جمع‌آوری می‌کنیم تا بتوانید نظر صادقانه‌ای در مورد اینکه تجربه با وب‌سایت ما واقعاً چگونه است، دریافت کنید!"
         />
       </Box>
-      <CommentsContainer />
+      {/* <CommentsContainer /> */}
       <CounterArea />
     </Box>
   );
