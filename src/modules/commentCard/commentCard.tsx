@@ -17,14 +17,16 @@ const CommentCard = ({ comment }: CommentCardProps) => {
           src={profileAddress} // Absolute path with leading "/"
           width={250}
           height={250}
-          className="max-w-14 max-h-14 rounded-full"
+          className="max-w-32 max-h-32 mt-8 rounded-full"
           alt="person"
         />
       )}
 
-      <Typography className="text-gray-500 text-center w-full lg:w-4/5 py-4 text-lg">
-        {description}
-      </Typography>
+      {description && (
+        <Typography className="text-gray-500 text-center w-full lg:w-4/5 py-4 text-lg">
+          {description}
+        </Typography>
+      )}
     </Box>
   );
 };

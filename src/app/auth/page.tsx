@@ -92,17 +92,7 @@ const LoginPage = () => {
               variant="outlined"
               size="large"
             >
-              ورود توسط فیسبوک
-            </Button>
-          </Box>
-
-          <Box className="mt-[25px]">
-            <Button
-              className="w-[560px] max-[1024px]:lg:w-[540px] h-[60px] mr-[30px] lg:hover:bg-[#00CA99] text-black border-[lightgray]"
-              variant="outlined"
-              size="large"
-            >
-              ورود توسط گوگل
+              ورود توسط لینکدین
             </Button>
           </Box>
         </Box>
@@ -166,17 +156,7 @@ const LoginPage = () => {
                 variant="outlined"
                 size="large"
               >
-                ورود توسط فیسبوک
-              </Button>
-            </Box>
-
-            <Box className="mt-[35px]">
-              <Button
-                className="w-[560px] h-[60px] mr-[30px] hover:bg-[#00CA99] text-black border-[lightgray]"
-                variant="outlined"
-                size="large"
-              >
-                ورود توسط گوگل
+                ورود توسط لینکدین
               </Button>
             </Box>
           </Box>
