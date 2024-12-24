@@ -11,12 +11,14 @@ import PersonIcon from "@mui/icons-material/Person";
 import { Box, Button } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const router = useRouter();
+  const path = usePathname();
+  const exactPath = path.split("/")[2];
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -40,12 +42,17 @@ const Header = () => {
 
   return (
     <header
-      className={`w-full fixed top-0 px-4 left-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-mainWhite shadow-md" : "bg-transparent"
-      }`}
+      className={`w-full fixed top-0 px-4 left-0 z-50 
+         transition-all duration-300 ${
+           isScrolled || exactPath === "admin"
+             ? "bg-mainWhite shadow-md"
+             : "bg-transparent"
+         }`}
     >
       <Box
-        className="w-full xl:w-11/12 mx-auto"
+        className={`${
+          exactPath === "admin" ? "w-full mx-auto" : "xl:w-11/12  mx-auto"
+        } `}
         sx={{
           width: "100%",
           display: "flex",

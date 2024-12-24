@@ -1,3 +1,5 @@
+import { SvgIconProps } from "@mui/material";
+
 // Existing interfaces
 
 export interface HeaderItemType {
@@ -96,3 +98,11 @@ export interface commentsSwiper {
 export interface myCommentComponentTypes {
   data: commentsSwiper[]; // Now accepts a 1D array of commentsSwiper
 }
+
+
+export type DashboardItemsType = {
+  id: string; // A unique identifier for the item
+  href: string; // URL or path for navigation
+  icon: React.ReactElement<SvgIconProps>; // A Material-UI SVG icon
+  title: string; // Title or label for the menu item
+};

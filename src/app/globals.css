@@ -11,13 +11,12 @@
   }
 }
 
-
 :root {
-  --light-green: #00CA99;
+  --light-green: #00ca99;
   --light-green-light: #00ca971a;
   --main-white: #ffffff;
-  --main-gray: #BDBDBD;
-  --light-green-xs: #D8F9ED;
+  --main-gray: #bdbdbd;
+  --light-green-xs: #d8f9ed;
   --light-green-xxs: #e5faf5;
   --light-green-xxxs: #f5fbf6;
   --high-green: #59cb99;
@@ -28,11 +27,11 @@
   --light-pink: #fcedf6;
   --pink: #f05ba1;
   --gold: #faa02f;
-  --light-green-xxxxs: #F2F6F0;
-  --gray-xlight: #F8F8F8;
-  --main-red: #C90000;
-  --light-xred: #FAE5E5;
-  --white-smoke: #FAFAFA;
+  --light-green-xxxxs: #f2f6f0;
+  --gray-xlight: #f8f8f8;
+  --main-red: #c90000;
+  --light-xred: #fae5e5;
+  --white-smoke: #fafafa;
 }
 
 /* Add this CSS to hide the scrollbar but still allow scrolling */
@@ -41,11 +40,9 @@
 }
 
 .scrollbar-hidden {
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
 }
-
-
 
 /* Import Vazirmatn font styles */
 @font-face {
@@ -227,4 +224,25 @@
 
 .MuiPaginationItem-previousNext {
   transform: rotate(180deg);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00ca99;
+  border-radius: 30px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 30px;
 }
