@@ -17,7 +17,7 @@ const CommentCard = ({ comment }: CommentCardProps) => {
           src={profileAddress} // Absolute path with leading "/"
           width={250}
           height={250}
-          className="max-w-32 max-h-32 mt-8 rounded-full"
+          className="max-w-36 max-h-3max-w-36 mt-8 rounded-full"
           alt="person"
         />
       )}

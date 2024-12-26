@@ -19,7 +19,7 @@ const CommentsContainer = ({ data }: myCommentComponentTypes) => {
           }}
           loop={true} // Enables infinite loop
           autoplay={{
-            delay: 10000000, // 4000 milliseconds
+            delay: 4000, // 4000 milliseconds
             disableOnInteraction: false, // Autoplay doesn't stop on user interaction
           }}
           modules={[Pagination, Autoplay]}

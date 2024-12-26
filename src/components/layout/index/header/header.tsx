@@ -85,7 +85,7 @@ const Header = () => {
               size="large"
               sx={{ display: { xs: "none", md: "block" } }}
             >
-              ارسال آگهی
+              ثبت پروژه
               <BusinessCenterIcon sx={{ margin: 0.5 }} />
             </Button>
           </Box>

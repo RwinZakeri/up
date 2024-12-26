@@ -105,7 +105,7 @@ const DreamJobCard = () => {
           sx={{ marginTop: 2 }}
           size="large"
         >
-          پذیرفتن
+          جزئیات بیشتر
           <SendIcon className="rotate-180 mr-2 text-lg" />
         </Button>
       </Box>

@@ -6,7 +6,7 @@ import Image from "next/image";
 const AboutArea = () => {
   return (
     <Box>
-      <Box className="md:flex-row flex flex-col gap-y-5 justify-center items-center gap-x-5 px-6 py-7  mt-[30px]">
+      <Box className="md:flex-row text-justify flex flex-col gap-y-5 justify-center items-center gap-x-5 px-6 py-7  mt-[30px]">
         <Box className="md:w-[45%] flex justify-center items-center gap-x-3">
           <Box>
             <Image className="rounded-[100px]" alt="about" src={about1}></Image>
@@ -38,11 +38,11 @@ const AboutArea = () => {
               به روش‌های مختلف با یکدیگر تعامل داشته باشند. این روش‌ها شامل، اما
               محدود به، موارد زیر هستند:
             </Typography>
-            <Typography className="leading-[26px] my-4">
+            <Typography className="leading-[26px] my-2">
               ● همکاری کامل در یک پروژه پژوهشی: از مراحل آغازین تا پایان، با درج
               نام افراد به‌عنوان همکار علمی در نتایج نهایی.
             </Typography>
-            <Typography className="leading-[26px] my-4">
+            <Typography className="leading-[26px] my-2 mb-8">
               ● مشارکت پروژه‌ای در ازای دریافت حق‌الزحمه: برای بخش‌هایی مشخص از
               یک پروژه.
             </Typography>

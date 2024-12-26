@@ -105,8 +105,8 @@ const BannerForm = () => {
             className="lg:bg-transparent bg-lightGreen/15"
             sx={{ height: "100%" }}
           >
-            {seachMenuItems.map((category) => (
-              <MenuItem key={category.id} value={category.id}>
+            {seachMenuItems.map((category, index) => (
+              <MenuItem key={index + 1} value={category.id}>
                 {category.name}
               </MenuItem>
             ))}
@@ -129,8 +129,8 @@ const BannerForm = () => {
                 sx={{ height: "100%" }}
               >
                 {findSubcategories(selectedCategory, seachMenuItems).map(
-                  (subcategory) => (
-                    <MenuItem key={subcategory.id} value={subcategory.id}>
+                  (subcategory, index) => (
+                    <MenuItem key={index + 1} value={subcategory.id}>
                       {subcategory.name}
                     </MenuItem>
                   )
@@ -160,8 +160,8 @@ const BannerForm = () => {
                 {findSubcategories(
                   selectedSubcategory,
                   findSubcategories(selectedCategory, seachMenuItems)
-                ).map((subsubcategory) => (
-                  <MenuItem key={subsubcategory.id} value={subsubcategory.id}>
+                ).map((subsubcategory, index) => (
+                  <MenuItem key={index + 1} value={subsubcategory.id}>
                     {subsubcategory.name}
                   </MenuItem>
                 ))}
