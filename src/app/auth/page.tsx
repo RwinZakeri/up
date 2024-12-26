@@ -18,7 +18,7 @@ const LoginPage = () => {
   return (
     <>
       <InnerTitle innerTitleInfo={innerTitleInfo} />
-      <Box className="standardContainer items-start flex p-4 flex-col md:flex-row w-full justify-center gap-5">
+      <Box className="standardContainer items-start flex p-4 flex-col md:flex-row w-full justify-center gap-5 my-24">
         <Form />
         <Form loginMode={true} />
       </Box>

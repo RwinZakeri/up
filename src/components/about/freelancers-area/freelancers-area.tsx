@@ -30,7 +30,7 @@ const FreelancersArea = () => {
         <Box className="w-1/2 flex items-start md:justify-end justify-center">
           <Link
             className="w-fit relative group text-center text-lightGreen after:content-[''] after:block after:absolute after:w-full after:bg-highGreen after:rounded-full after:left-0 after:h-0.5"
-            href={"/"}
+            href={"/jobs"}
           >
             همه فرصت ها را مرور کنید{" "}
             <ArrowBackIosNewIcon

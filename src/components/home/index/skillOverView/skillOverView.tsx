@@ -10,7 +10,7 @@ const SkillOverView = () => {
       <SkillOverViewCardContainer />
       <Link
         className="block w-fit mx-auto relative group text-center text-lightGreen after:content-[''] after:block after:absolute after:w-full after:bg-highGreen after:rounded-full after:left-0 after:h-0.5 my-8"
-        href={"/"}
+        href={"/jobs"}
       >
         همه فرصت ها را مرور کنید
         <ArrowBackIosNewIcon

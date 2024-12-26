@@ -4,7 +4,7 @@ import { Box, Button, Divider, TextField } from "@mui/material";
 
 const Form = ({ loginMode }: { loginMode?: boolean }) => {
   return (
-    <Box className=" w-full md:w-[49%] shadow-lg py-4 rounded-xl">
+    <Box className=" w-full md:w-[49%] shadow-xl  py-4 rounded-xl">
       {loginMode ? (
         <>
           <h3 className="mr-[30px]  text-[24px]">ورود به حساب کاربری</h3>
