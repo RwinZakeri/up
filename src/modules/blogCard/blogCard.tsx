@@ -11,7 +11,6 @@ const BlogCard = ({
   postPictureUrl,
   
 }: BlogPost) => {
-  console.log(postPictureUrl);
   return (
     <Link href={`/blog/${id}`} className="block group w-full md:w-[30%]">
       <Box className="w-full rounded-xl relative mb-10 ">

@@ -6,7 +6,6 @@ const CopyButton = ({ title }: { title: string }) => {
   const copyHandler = (e: React.MouseEvent<HTMLButtonElement>) => {
     // Accessing the button's text content
     const { textContent } = e.currentTarget;
-    console.log(e.currentTarget.textContent);
 
     navigator.clipboard
       .writeText(textContent!)

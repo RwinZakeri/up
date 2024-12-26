@@ -32,10 +32,10 @@ import type { InnerTitleInfo } from "@/types/type";
 
 const EmployersListingComponent = () => {
   const innerTitleInfo: InnerTitleInfo = {
-    title: "لیست مسِئولین ",
+    title: "لیست مسئولین ",
     mainRouteTitle: "خانه",
     mainRouteAddress: "/",
-    current: "لیست مسِئولین ",
+    current: "لیست مسئولین ",
     currentAddress: "/employers-listing",
   };
   return (

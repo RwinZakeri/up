@@ -12,7 +12,6 @@ const HomePage = () => {
   const commentSlider: commentsSwiper[] = db.commentSlider;
   const hamkaran: commentsSwiper[] = db.hamkar;
 
-  console.log(db.commentSlider);
   return (
     <Box className="">
       <Box className="bg-lightGreenLowOpacity">

@@ -16,7 +16,6 @@ const AccordionQuestions = () => {
       setExpanded(isExpanded ? panel : false);
     };
 
-  console.log(question);
   return (
     <Box className="flex-col md:flex-row items-center justify-center flex justify-center gap-4 flex-wrap pb-[50px]">
       {question.map((item, index) => (

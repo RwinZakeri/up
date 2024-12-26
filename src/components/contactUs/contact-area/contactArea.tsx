@@ -27,7 +27,6 @@ const ContactArea = () => {
       return;
     }
 
-    console.log({ email, name, phoneNumber, subject, message, termsAccepted });
 
     // Reset form
     setEmail("");
