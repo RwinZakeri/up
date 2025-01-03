@@ -5,10 +5,10 @@ import { Box } from "@mui/material";
 
 const RuleComponents = () => {
   const innerTitleInfo: InnerTitleInfo = {
-    title: "قوانین و ظوابط",
+    title: "قوانین و ضوابط",
     mainRouteTitle: "خانه",
     mainRouteAddress: "/",
-    current: "قوانین و ظوابط",
+    current: "قوانین و ضوابط",
     currentAddress: "/jobs",
   };
   return (
