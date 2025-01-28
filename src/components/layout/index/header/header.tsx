@@ -50,7 +50,7 @@ const Header = () => {
          }`}
     >
       <Box
-        className={`${
+        className={` p-3 lg:p-0 ${
           exactPath === "admin" ? "w-full mx-auto" : "xl:w-11/12  mx-auto"
         } `}
         sx={{
@@ -58,7 +58,6 @@ const Header = () => {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          padding: { xs: "10px", md: "0px" },
           boxShadow: "none",
         }}
       >

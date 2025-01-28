@@ -2,6 +2,7 @@ import dynamic from "next/dynamic";
 import { ReactNode } from "react";
 import { Bounce, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Footer from "./footer/footer";
 // import Header from "./header/header";
 const Header = dynamic(() => import("./header/header"), { ssr: false });
 
@@ -23,7 +24,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
         theme="light"
         transition={Bounce}
       />
-      {/* <Footer/> */}
+      <Footer />
     </>
   );
 };

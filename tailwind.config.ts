@@ -21,6 +21,7 @@ const config: Config = {
         lightGreenXs: "var(--light-green-xs)",
         lightGreenXXs: "var(--light-green-xxs)",
         lightGreenXXXs: "var(--light-green-xxxs)",
+        lightTextGray: "var(--light-text-gray)",
         highGreen: "var(--high-green)",
         lightGray: "var(--light-gray)",
         lightRed: "var(--light-red)",
@@ -34,7 +35,6 @@ const config: Config = {
         lightXRed: "var(--light-xred)",
         DarkGray: "var(--light-dark-gray)",
         whiteSmoke: "var(--white-smoke)",
-        
       },
     },
   },
